@@ -8,6 +8,18 @@ This repository is the computational verification of that claim.
 
 ---
 
+<div align="center">
+
+### Voynich Engine — Full Execution
+
+![Voynich Engine Execution Animation](data/voynich-engine-execution.gif)
+
+*Register flows across the entire manuscript (Cosmological → Botanical → Biological → Balneological)*
+
+</div>
+
+---
+
 ## Three independent analyses. One convergence.
 
 ### 1 — Structural imscription

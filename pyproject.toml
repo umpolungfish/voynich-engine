@@ -16,9 +16,10 @@ dependencies = [
 ]
 
 [project.scripts]
-voynich-compile = "voynich_engine.compiler:main"
-voynich-run     = "voynich_engine.runtime:main"
-voynich-graph   = "voynich_engine.callgraph:main"
+voynich-compile   = "voynich_engine.compiler:main"
+voynich-run       = "voynich_engine.runtime:main"
+voynich-graph     = "voynich_engine.callgraph:main"
+voynich-sections  = "voynich_engine.sectional:main"
 
 [tool.setuptools.packages.find]
 where = ["."]

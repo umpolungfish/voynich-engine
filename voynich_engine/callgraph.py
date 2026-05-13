@@ -93,28 +93,62 @@ def render(G, output: str | Path = 'voynich_graph.png', dpi: int = 300) -> None:
     plt.close()
 
 
+def _normalize_folio(name: str) -> str:
+    """Normalize folio name to lowercase with 'f' prefix, e.g. '103r' → 'f103r'."""
+    name = name.lower().strip()
+    if not name.startswith('f'):
+        name = 'f' + name
+    return name
+
+
 def generate_call_graph(
     source,
     output: str | Path = 'voynich_graph.png',
     verbose: bool = True,
+    folio: str | None = None,
 ) -> tuple:
     """
     Build and render the call graph from a compilation result or log file.
 
     source: compile_corpus() result dict, or path to a log file (str/Path)
+    folio:  optional folio name (e.g. 'f103r', '103r', 'F103R') to restrict the graph
     Returns: (full_graph, component_graph)
     """
     if isinstance(source, dict):
-        instructions: list[str] = []
-        for folio in source['folios'].values():
-            instructions.extend(folio['instructions'])
+        if folio is not None:
+            key = _normalize_folio(folio)
+            if key not in source['folios']:
+                available = sorted(source['folios'].keys())
+                raise ValueError(
+                    f"Folio '{key}' not found. Available: {', '.join(available)}"
+                )
+            instructions: list[str] = list(source['folios'][key]['instructions'])
+            if verbose:
+                print(f'Folio         : {key} ({source["folios"][key]["registers"]} registers)')
+        else:
+            instructions = []
+            for folio_data in source['folios'].values():
+                instructions.extend(folio_data['instructions'])
     else:
         path = Path(source)
-        instructions = [
-            line.strip()
-            for line in path.read_text(encoding='utf-8', errors='ignore').splitlines()
-            if '%r' in line
-        ]
+        lines = path.read_text(encoding='utf-8', errors='ignore').splitlines()
+        if folio is not None:
+            key = _normalize_folio(folio)
+            header = f'=== {key.upper()} ==='
+            instructions = []
+            in_folio = False
+            for line in lines:
+                if line.startswith('==='):
+                    in_folio = line.strip() == header
+                    continue
+                if in_folio and '%r' in line:
+                    instructions.append(line.strip())
+            if not instructions:
+                raise ValueError(f"Folio '{key}' not found in log file '{path}'.")
+            if verbose:
+                print(f'Folio         : {key}')
+        else:
+            instructions = [line.strip() for line in lines if '%r' in line]
 
     G = build_graph(instructions)
     C = largest_component(G)
@@ -136,6 +170,8 @@ def main() -> None:
 
     parser = argparse.ArgumentParser(description='Generate IMASM call graph')
     parser.add_argument('transcription', help='EVA transcription or compiled log file')
+    parser.add_argument('--folio', metavar='FOLIO',
+                        help='Restrict graph to a single folio (e.g. f103r, 103r)')
     parser.add_argument('--output', default='voynich_graph.png')
     parser.add_argument('--dpi', type=int, default=300)
     args = parser.parse_args()
@@ -146,7 +182,7 @@ def main() -> None:
     else:
         source = path
 
-    generate_call_graph(source, output=args.output, verbose=True)
+    generate_call_graph(source, output=args.output, verbose=True, folio=args.folio)
 
 
 if __name__ == '__main__':
