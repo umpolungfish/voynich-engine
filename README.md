@@ -104,7 +104,7 @@ The bootstrap core `s a ch e sh d y s` appears as a repeating closed loop across
 
 <div align="center">
 
-![Voynich Engine Execution Loops](./data/vgrph.png)
+![Voynich Engine Execution Loops](./data/vmgrph.png)
 
 *Loops Upon Loops*
 
