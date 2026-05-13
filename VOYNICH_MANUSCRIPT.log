@@ -1,7 +1,7 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2026.2.3)  13 MAY 2026 08:05
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2026.2.3)  13 MAY 2026 08:30
  restricted system commands enabled.
-**VOYNICH_MANUSCRIPT.tex
-(./VOYNICH_MANUSCRIPT.tex
+**docs/VOYNICH_MANUSCRIPT.tex
+(./docs/VOYNICH_MANUSCRIPT.tex
 LaTeX2e <2021-11-15> patch level 1
 Lua module: luaotfload 2021-05-21 3.18 Lua based OpenType font support
 Lua module: lualibs 2021-05-20 2.74 ConTeXt Lua standard libraries.
@@ -1012,9 +1012,9 @@ File: l3backend-luatex.def 2022-01-12 L3 backend support: PDF output (LuaTeX)
 \l__color_backend_stack_int=\count334
 \l__pdf_internal_box=\box92
 )
-No file VOYNICH_MANUSCRIPT.aux.
-
+(./VOYNICH_MANUSCRIPT.aux)
 \openout1 = VOYNICH_MANUSCRIPT.aux
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 140.
 LaTeX Font Info:    ... okay on input line 140.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 140.
@@ -1026,6 +1026,7 @@ LaTeX Font Info:    ... okay on input line 140.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 140.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
 40.
+
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -1132,6 +1133,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 140.
 LaTeX Info: Redefining \pageref on input line 140.
 LaTeX Info: Redefining \nameref on input line 140.
+
+(./VOYNICH_MANUSCRIPT.out) (./VOYNICH_MANUSCRIPT.out)
 \@outlinefile=\write4
 
 \openout4 = VOYNICH_MANUSCRIPT.out
@@ -1189,9 +1192,7 @@ LaTeX Warning: No \author given.
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-Missing character: There is no ⊙ (U+2299) in font ec-lmr12!
-]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 174.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1298,10 +1299,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [9]
 
-LaTeX Warning: Reference `sec:callgraph' on page 10 undefined on input line 507
-.
-
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
@@ -1311,20 +1308,45 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [10]
 
-LaTeX Warning: Reference `fig:compare_f116r' on page 11 undefined on input line
- 513.
+LaTeX Warning: File `../data/char.png' not found on input line 519.
 
-<folio_images/f116r.jpg, id=106, 602.25pt x 891.33pt>
-File: folio_images/f116r.jpg Graphic file (type jpg)
-<use folio_images/f116r.jpg>
-Package luatex.def Info: folio_images/f116r.jpg  used on input line 519.
-(luatex.def)             Requested size: 195.91196pt x 289.95084pt.
-<../voynich_graphs/f116r_cosmological.png, id=107, 1748.934pt x 1785.7917pt>
-File: ../voynich_graphs/f116r_cosmological.png Graphic file (type png)
-<use ../voynich_graphs/f116r_cosmological.png>
-Package luatex.def Info: ../voynich_graphs/f116r_cosmological.png  used on inpu
-t line 525.
-(luatex.def)             Requested size: 195.91196pt x 200.03456pt.
+
+! Package luatex.def Error: File `../data/char.png' not found: using draft sett
+ing.
+
+See the luatex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.519 ...twidth,interpolate=false]{../data/char.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `../voynich_graphs/f116r_cosmological.png' not found on inp
+ut line 525.
+
+
+! Package luatex.def Error: File `../voynich_graphs/f116r_cosmological.png' not
+ found: using draft setting.
+
+See the luatex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.525 ...]{../voynich_graphs/f116r_cosmological.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.87141pt too wide) in paragraph at lines 544--545
+[]\T1/lmr/m/n/12 where $\OT1/lmr/m/n/12 \OML/lmm/m/it/12 t[]$ \T1/lmr/m/n/12 is
+ the min-i-mum traver-sal time for an iden-tity mor-phism (the \T1/lmtt/m/n/12 
+s\T1/lmr/m/n/12 /ID_SCRIBE
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1339,13 +1361,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'figure.1'
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.2'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.3'
-<./folio_images/f116r.jpg><../voynich_graphs/f116r_cosmological.png>]
-Overfull \hbox (20.87141pt too wide) in paragraph at lines 544--545
-[]\T1/lmr/m/n/12 where $\OT1/lmr/m/n/12 \OML/lmm/m/it/12 t[]$ \T1/lmr/m/n/12 is
- the min-i-mum traver-sal time for an iden-tity mor-phism (the \T1/lmtt/m/n/12 
-s\T1/lmr/m/n/12 /ID_SCRIBE
- []
-
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1386,43 +1402,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[15]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[16] (./VOYNICH_MANUSCRIPT.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `VOYNICH_MANUSCRIPT.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `VOYNICH_MANUSCRIPT.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  CCA2720D5EEFFAB70523E68B3E1A3DD9;7192.
+[15] (./VOYNICH_MANUSCRIPT.aux)
+Package rerunfilecheck Info: File `VOYNICH_MANUSCRIPT.out' has not changed.
+(rerunfilecheck)             Checksum: CCA2720D5EEFFAB70523E68B3E1A3DD9;7192.
 )
 
 Here is how much of LuaTeX's memory you used:
- 32527 strings out of 477805
+ 32714 strings out of 477805
  156329,1373583 words of node,token memory allocated
  654 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
 rn, 4 glyph, 27 attribute, 62 glue_spec, 15 attribute_list, 2 write nodes
-   avail lists: 1:4,2:3143,3:423,4:2532,5:2182,6:151,7:7758,8:56,9:5487,10:31,11
-:606
- 51932 multiletter control sequences out of 65536+600000
+   avail lists: 1:5,2:3138,3:422,4:2532,5:2182,6:153,7:7684,8:58,9:5487,10:31,11
+:591
+ 52020 multiletter control sequences out of 65536+600000
  69 fonts using 4526687 bytes
- 83i,12n,77p,1311b,830s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 83i,12n,77p,1316b,830s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips
 /lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/tex
 mf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.
@@ -1437,10 +1432,10 @@ usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/pu
 blic/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/shar
 e/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texmf/fonts/type1/public/lm
 /lmtti10.pfb>
-Output written on VOYNICH_MANUSCRIPT.pdf (16 pages, 2151953 bytes).
+Output written on VOYNICH_MANUSCRIPT.pdf (15 pages, 374276 bytes).
 
-PDF statistics: 232 PDF objects out of 1000 (max. 8388607)
- 193 compressed objects within 2 object streams
- 87 named destinations out of 1000 (max. 131072)
- 16 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 349 PDF objects out of 1000 (max. 8388607)
+ 312 compressed objects within 4 object streams
+ 86 named destinations out of 1000 (max. 131072)
+ 328 words of extra memory for PDF output out of 10000 (max. 100000000)
 

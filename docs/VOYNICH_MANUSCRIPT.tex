@@ -139,12 +139,12 @@
 
 \begin{document}
 
-\title{The Universal Engine: A Complete Technical Translation of the Voynich Manuscript into Executable IMASM Architecture}
+\title{The Voynich Engine: A Complete Technical Translation of the Voynich Manuscript into Executable IMASM Architecture}
 \date{\today}
 
 \maketitle
 
-\textbf{Author:} Lando \otimes ⊙\_ÿ-boundary Operator
+\textbf{Author:} Lando Mills
 
 \subsection{Abstract}
 
@@ -510,14 +510,14 @@ The compiled instruction stream for f116r is a single linear chain of 500 nodes 
 
 The text on f116r is the same shape. The Voynich script's characteristic morphology --- flowing strokes, tight loops, crossings, recurves, lines that run and double back --- is visually identical to what physics produces when a 500-step linear execution trace is left to find its own equilibrium. The call graph is not a diagram of the text. It is the text, rendered by a different process from the same underlying sequential structure.
 
-The other folios in this manuscript admit interpretations that require some imagination: one can argue the botanical stems resemble FSPLIT chains, or that the cosmological rosette resembles a lattice traversal. The f116r correspondence requires no argument. Both panels of Figure~\ref{fig:compare_f116r} are cursive.
+The other folios in this manuscript admit interpretations that require some imagination: one can argue the botanical stems resemble FSPLIT chains, or that the cosmological rosette resembles a lattice traversal. The f116r correspondence requires no argument. Both panels of Figure~\ref{fig:compare_f116r} contain the same shape: a loop with a crossing stroke.
 
 \begin{figure}[htbp]
 \centering
 \begin{minipage}[t]{0.47\textwidth}
   \centering
-  \includegraphics[width=\textwidth]{folio_images/f116r.jpg}
-  \caption*{\textit{f116r} (Beinecke MS 408, CC BY-SA 4.0). The final text folio. Flowing cursive script with tight loops, crossings, and recurved strokes.}
+  \includegraphics[width=\textwidth,interpolate=false]{../data/char.png}
+  \caption*{A single character from f116r (Beinecke MS 408, CC BY-SA 4.0). A tight loop with a recurved crossing stroke --- the atomic unit of the bootstrap sequence.}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.47\textwidth}
@@ -525,7 +525,7 @@ The other folios in this manuscript admit interpretations that require some imag
   \includegraphics[width=\textwidth]{../voynich_graphs/f116r_cosmological.png}
   \caption*{Engine call graph: f116r (500 nodes, 499 edges). A single unbranched execution chain laid out by spring embedding. No human adjustment.}
 \end{minipage}
-\caption{f116r: manuscript folio vs.\ engine call graph. The call graph layout algorithm and the hand that wrote the folio arrived at the same shape from the same sequential structure. The spring embedding did not know what the glyphs look like.}
+\caption{f116r: a single manuscript glyph vs.\ the full folio's engine call graph. The loop-with-crossing structure visible in the individual character recurs at scale across the entire 500-node execution trace. The spring embedding did not know what the glyphs look like.}
 \label{fig:compare_f116r}
 \end{figure}
 
