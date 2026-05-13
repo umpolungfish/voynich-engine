@@ -1,0 +1,4 @@
+520 registers (not 208), 489/520 = 94.0% IFIX-burned, 17.02%
+steady-state paradox rate verified to 1,000,000 steps. Register
+space locks after one complete pass (44,445 steps); 208 was a
+mid-first-pass snapshot at step 10,000.

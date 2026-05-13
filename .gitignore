@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Generated outputs — reproduce with quickstart.py
+*.png
+full_compilation_log.txt
+full_untruncated_log.txt
+vout.txt
+
+# Editor
+.vscode/
+.idea/
+*.swp

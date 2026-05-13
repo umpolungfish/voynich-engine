@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voynich-engine"
+version = "1.0.0"
+description = "IMASM compiler and Universal Engine runtime for the Voynich Manuscript"
+readme = "README.md"
+license = { text = "Unlicense" }
+requires-python = ">=3.10"
+dependencies = [
+    "networkx>=3.0",
+    "matplotlib>=3.6",
+    "scipy>=1.10",
+]
+
+[project.scripts]
+voynich-compile = "voynich_engine.compiler:main"
+voynich-run     = "voynich_engine.runtime:main"
+voynich-graph   = "voynich_engine.callgraph:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["voynich_engine*"]
