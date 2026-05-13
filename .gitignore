@@ -6,7 +6,6 @@ build/
 .eggs/
 
 # Generated outputs — reproduce with quickstart.py
-*.png
 full_compilation_log.txt
 full_untruncated_log.txt
 vout.txt
