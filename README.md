@@ -193,6 +193,22 @@ The Universal Imscriptive Grammar — of which this repository is the third, com
 
 `data/LSI_ivtff_0d.txt` is the Takahashi EVA transcription of the Voynich Manuscript, from the Landini-Stolfi Interlinear Archive. The original manuscript (Beinecke MS 408) is held by the Beinecke Rare Book & Manuscript Library, Yale University, and is in the public domain.
 
+## Visualizations
+
+**Full-corpus animated call-graph** — 227 folios, 546 nodes, 694 edges, 149 cross-folio back-edges. Phase 1: nodes revealed in folio order. Phase 2: Gaussian pulse traverses the graph.
+
+![Corpus CFG](docs/animated_cfg_corpus_voynich.gif)
+
+**Call-graph orbit** — rotating 3D view of the corpus topology.
+
+![Call-graph orbit](docs/voynich_callgraph_orbit.gif)
+
+**Execution flow CFG** — IMASM opcode execution trace.
+
+![Animated CFG](docs/animated_cfg.gif)
+
+---
+
 ## License
 
 Unlicense — public domain. No conditions, no attribution required.
