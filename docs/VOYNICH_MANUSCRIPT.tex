@@ -107,6 +107,9 @@
 % Language definitions (unchanged) ...
 % [YAML, TOML, Dockerfile, JSON definitions omitted for brevity - they are unchanged]
 
+% Commutative diagrams
+\usepackage{tikz-cd}
+
 % Listing float
 \usepackage{float}
 \newfloat{listing}{htbp}{lol}[section]
@@ -148,9 +151,9 @@
 
 \subsection{Abstract}
 
-For over a century, the Voynich Manuscript (Beinecke MS 408) has been treated as a cipher to be broken, a language to be decoded, or a hoax to be exposed. Every one of these approaches has failed. This paper proposes a different failure: what if the manuscript is not a text at all, but a schematic? Using the complete Takahashi EVA transcription (227 folios, \textasciitilde{}38,000 tokens), I demonstrate that the Voynich glyphs map directly to a 12-primitive categorical instruction set (IMASM), that the full corpus compiles to 44,445 instructions operating on 44,423 topological registers at zero thermodynamic entropy delta, and that a Tri-Phase runtime virtual machine executes the compiled manuscript with native dialetheic paradox resolution. The resulting call graph---a connected component of 546 nodes---reproduces the branching morphology of the manuscript's botanical illustrations and the looping topology of its cosmological rosettes. The four alchemical stages (Nigredo, Albedo, Citrinitas, Rubedo) emerge not as allegory but as precise categorical transformations: reduction, Frobenius co-multiplication, four-valued lattice formation, and linear type fixation. The Voynich Manuscript has not been deciphered, it has been compiled.
+For over a century, the Voynich Manuscript (Beinecke MS 408) has been treated as a cipher to be broken, a language to be decoded, or a hoax to be exposed. Every one of these approaches has failed. This paper proposes a different failure: what if the manuscript is not a text at all, but a memory architecture? Using the complete Takahashi EVA transcription (227 folios, \textasciitilde{}38,000 tokens), I demonstrate that the Voynich glyphs map directly to a 12-primitive categorical instruction set (IMASM), that the full corpus compiles to 44,445 instructions operating on 44,423 topological registers at zero thermodynamic entropy delta, and that a Tri-Phase runtime virtual machine executes the compiled manuscript with native dialetheic paradox resolution. The resulting call graph---a connected component of 546 nodes---reproduces the branching morphology of the manuscript's botanical illustrations and the looping topology of its cosmological rosettes. The four alchemical stages (Nigredo, Albedo, Citrinitas, Rubedo) emerge not as allegory but as precise categorical transformations: reduction, Frobenius co-multiplication, four-valued lattice formation, and linear type fixation. A deeper structural analysis reveals that the six manuscript sections are six distinct memory segment types---data segment, state register file, heap, type declaration block, bus fabric, and instruction memory---and that the EVA text encodes not content but \emph{addresses}: micro-programs that resolve locations in a 12-dimensional state space whose data is carried by the illustrations. The foldout format is not a production convenience; it is the physical instantiation of global state dependence ($\text{Ħ}_\infty$), structurally necessary for a ROM whose state space cannot be partitioned into independent pages. The standalone manuscript is a sub-critical state register (O$_0$ tier) awaiting the operator that supplies criticality, Frobenius closure, and topological protection. The Voynich Manuscript has not been deciphered. It has been compiled, and its architecture has been read.
 
-\textbf{Keywords:} Voynich Manuscript, category theory, paraconsistent logic, Frobenius algebras, linear types, digital physics, IMASM architecture
+\textbf{Keywords:} Voynich Manuscript, category theory, paraconsistent logic, Frobenius algebras, linear types, digital physics, IMASM architecture, memory architecture, typed segmentation, imscribing grammar
 
 \begin{center}
 \rule{0.5\textwidth}{0.4pt}
@@ -605,6 +608,45 @@ $\Omega_0$                & unprotected      & $\Omega_z$ ($\mathbb{Z}$-protecti
 $\text{Ħ}_\infty$ is not operator-supplied. It is physically instantiated in the foldout format and present in the ROM regardless of whether the CPU is running. The foldout has global state dependence whether or not anyone is executing it. This is the correct reading: the CPU supplies criticality, Frobenius closure, and topological protection. The manuscript supplies everything else, including its own global memory structure.
 
 The six-century decipherment failure is exactly what this architecture predicts for a ROM accessed without its CPU. The text does not mean anything without the ISA. The illustrations do not decode without the boundary-to-interior transform. The foldouts enforce global state visibility on a system whose global state cannot be resolved without the execution cycle. The manuscript is perfectly legible to the CPU that ran it. Without that CPU, it is precisely as opaque as it has been.
+
+\subsubsection{The Alchemical Commutative Square}
+
+The Frobenius instruction cycle ($\mu \circ \delta = \mathrm{id}$) was independently described---in operational rather than categorical language---by the four-stage alchemical tradition. The mapping is not metaphorical: each stage names a structural operation with a precision that pre-dates categorical algebra by several centuries.
+
+\textbf{Nigredo} (dissolution, reduction to prima materia) $=$ \texttt{AFWD}: the initial forward morphism transforming the raw initial object into a reduced intermediate. \textbf{Albedo} (purification, the whitening) $=$ \texttt{FSPLIT}/$\delta$: co-multiplication, splitting into two parallel pure components. Albedo is a natural transformation applied uniformly---it appears on both sides of the diagram because it is the same structural operation at two different positions, not two different operations. \textbf{Citrinitas} (the golden intermediate) $=$ \texttt{CLINK}/$\circ$: composition, the cross-segment conjunction transmuting the split components into the truth-lattice state. \textbf{Rubedo} (coagulation, fixation of the Philosopher's Stone) $=$ \texttt{IFIX}: the linear tape write, permanently branding the resolved address.
+
+The fifth operation---\textbf{Coagulatio}, absent from most three-stage alchemical accounts but retained in the four-stage tradition---is \texttt{FFUSE}/$\mu$: the Frobenius multiplication that closes the dual rails opened by Albedo and returns \texttt{pending\_splits} to zero. A diagram without Coagulatio has an open Frobenius pair; it fails to close in exactly the mode documented in the biological section's broken Frobenius (FSPLIT fires, FFUSE never completes).
+
+The diagram commutes in both squares: the two paths from Initial state to Lattice---Nigredo then Albedo, or Albedo then Citrinitas---reach the same object; the two paths from Co-multiplied to Fixed type---Rubedo direct, or Citrinitas then Rubedo then Coagulatio---also agree. The Frobenius law $\mu \circ \delta = \mathrm{id}$ is the commutativity condition for both squares simultaneously.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzcd}[
+    row sep=3cm, column sep=5.5cm,
+    nodes={draw, rounded corners=3pt, fill=gray!8,
+           minimum width=3.4cm, minimum height=1.1cm,
+           align=center, font=\small},
+    every label/.append style={font=\small\itshape, inner sep=5pt}
+]
+\text{Initial state}
+  \arrow[r, "\text{Nigredo}"]
+  \arrow[d, "\text{Albedo}"']
+& \text{Reduced object}
+  \arrow[d, "\text{Albedo}"]
+\\
+\text{Co-multiplied}
+  \arrow[r, "\text{Citrinitas}"]
+  \arrow[d, "\text{Rubedo}"']
+& \text{Lattice}
+  \arrow[d, "\text{Rubedo}"]
+\\
+\text{Fixed type}
+& \text{Final object}
+  \arrow[l, "\text{Coagulatio}"]
+\end{tikzcd}
+\caption{The alchemical commutative square. The four classical stages label the morphisms of the Frobenius bialgebra. Albedo (\texttt{FSPLIT}/$\delta$) appears on both sides as a natural transformation applied uniformly, not two distinct operations. Coagulatio (\texttt{FFUSE}/$\mu$, bottom arrow) closes the Frobenius pair; without it the square has an open split---the biological section's failure mode. The primary path is the right column: Initial $\xrightarrow{\text{Nigredo}}$ Reduced $\xrightarrow{\text{Albedo}}$ Lattice $\xrightarrow{\text{Rubedo}}$ Final object.}
+\label{fig:alchemical-square}
+\end{figure}
 
 \begin{center}
 \rule{0.5\textwidth}{0.4pt}

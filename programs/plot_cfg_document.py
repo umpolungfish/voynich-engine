@@ -28,30 +28,28 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import networkx as nx
 
-from voynich_engine.compiler import compile_corpus
+from voynich_engine.compiler import compile_corpus, peak_folios
 from voynich_engine.callgraph import build_graph, largest_component
 from voynich_engine.primitives import PRIMITIVES
 
 TRANSCRIPTION = root / "data" / "LSI_ivtff_0d.txt"
-OUT = root / "docs" / "f116r_callgraph_document.png"
+OUT = root / "docs" / "voynich_callgraph_document.png"
 
-# opcode → mnemonic
 _MNEM = {v["opcode"]: v["mnemonic"] for v in PRIMITIVES.values()}
 
-# mnemonic → family color
 _FAMILY_COLOR: dict[str, str] = {
-    "FSPLIT":  "#4e79a7",   # Frobenius co-multiply — blue
-    "FFUSE":   "#4e79a7",   # Frobenius multiply    — blue
-    "AFWD":    "#f28e2b",   # Morphism forward      — orange
-    "AREV":    "#f28e2b",   # Morphism reverse      — orange
-    "CLINK":   "#f28e2b",   # Composition           — orange
-    "ISCRIB":  "#59a14f",   # Identity              — green
-    "IFIX":    "#59a14f",   # Linear write          — green
-    "EVALT":   "#e15759",   # Lattice true          — red
-    "EVALF":   "#e15759",   # Lattice false         — red
-    "ENGAGR":  "#e15759",   # Dialetheia            — red
-    "VINIT":   "#9c9c9c",   # Bootstrap init        — gray
-    "TANCH":   "#9c9c9c",   # Bootstrap terminal    — gray
+    "FSPLIT":  "#4e79a7",
+    "FFUSE":   "#4e79a7",
+    "AFWD":    "#f28e2b",
+    "AREV":    "#f28e2b",
+    "CLINK":   "#f28e2b",
+    "ISCRIB":  "#59a14f",
+    "IFIX":    "#59a14f",
+    "EVALT":   "#e15759",
+    "EVALF":   "#e15759",
+    "ENGAGR":  "#e15759",
+    "VINIT":   "#9c9c9c",
+    "TANCH":   "#9c9c9c",
 }
 _DEFAULT_COLOR = "#cccccc"
 
@@ -76,13 +74,18 @@ def node_mnemonic(node_id: int, instructions: list[str]) -> str:
 def main() -> None:
     print("Compiling corpus …")
     result = compile_corpus(TRANSCRIPTION)
-    folio = result["folios"].get("f116r")
-    if folio is None:
-        print("ERROR: f116r not found"); return
+    folios = result["folios"]
+    top = peak_folios(result, 1)
+    peak_name = top[0][0] if top else "full corpus"
 
-    instructions = folio["instructions"]
-    print(f"f116r: {folio['registers']} registers, {len(instructions)} instructions")
+    all_instructions: list[str] = []
+    for folio_data in folios.values():
+        all_instructions.extend(folio_data["instructions"])
 
+    print(f"Folios: {len(folios)}  |  Instructions: {len(all_instructions)}")
+    print(f"Peak folio by register count: {peak_name}")
+
+    instructions = all_instructions
     G = build_graph(instructions)
     C = largest_component(G)
     print(f"Component: {C.number_of_nodes()} nodes, {C.number_of_edges()} edges")
@@ -127,8 +130,9 @@ def main() -> None:
 
     ax.set_axis_off()
     ax.set_title(
-        f"f116r — IMASM Register Flow Graph\n"
-        f"{C.number_of_nodes()} nodes · {C.number_of_edges()} edges · largest component",
+        f"Voynich Manuscript — IMASM Register Flow Graph (full corpus)\n"
+        f"{C.number_of_nodes()} nodes · {C.number_of_edges()} edges · "
+        f"{len(folios)} folios · largest component",
         color="white", fontsize=11, pad=12,
     )
 

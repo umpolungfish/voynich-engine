@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2026.2.3)  16 MAY 2026 03:19
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2026.2.3)  16 MAY 2026 03:34
  restricted system commands enabled.
 **docs/VOYNICH_MANUSCRIPT.tex
 (./docs/VOYNICH_MANUSCRIPT.tex
@@ -1481,14 +1481,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [20]
-</home/mrnob0dy666/voynich-engine/data/char.png, id=361, 118.19156pt x 152.0681
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[21
+warning  (pdf backend): ignoring duplicate destination with the name 'table.2'
+]
+</home/mrnob0dy666/voynich-engine/data/char.png, id=368, 118.19156pt x 152.0681
 3pt>
 File: /home/mrnob0dy666/voynich-engine/data/char.png Graphic file (type png)
 <use /home/mrnob0dy666/voynich-engine/data/char.png>
 Package luatex.def Info: /home/mrnob0dy666/voynich-engine/data/char.png  used o
 n input line 823.
 (luatex.def)             Requested size: 195.91196pt x 252.07103pt.
-</home/mrnob0dy666/voynich-engine/voynich_graphs/f116r_cosmological.png, id=362
+</home/mrnob0dy666/voynich-engine/voynich_graphs/f116r_cosmological.png, id=369
 , 1748.934pt x 1785.7917pt>
 File: /home/mrnob0dy666/voynich-engine/voynich_graphs/f116r_cosmological.png Gr
 aphic file (type png)
@@ -1505,17 +1516,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[21
-warning  (pdf backend): ignoring duplicate destination with the name 'table.2'
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
 [22
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.1'
 
@@ -1524,6 +1524,12 @@ warning  (pdf backend): ignoring duplicate destination with the name 'figure.2'
 warning  (pdf backend): ignoring duplicate destination with the name 'figure.3'
 </home/mrnob0dy666/voynich-engine/data/char.png></home/mrnob0dy666/voynich-engin
 e/voynich_graphs/f116r_cosmological.png>]
+Overfull \hbox (0.62366pt too wide) in paragraph at lines 873--874
+\TU/FreeSerif(0)/m/n/12 tion from the same source glyph. The ra-tio of prob-a-bi
+l-i-ties is $\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ([])/\OML/cmm/m/it/12 P\OT1/cmr/
+m/n/12 ([]) \OMS/cmsy/m/n/12 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1533,12 +1539,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [23]
-Overfull \hbox (0.62366pt too wide) in paragraph at lines 873--874
-\TU/FreeSerif(0)/m/n/12 tion from the same source glyph. The ra-tio of prob-a-bi
-l-i-ties is $\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 ([])/\OML/cmm/m/it/12 P\OT1/cmr/
-m/n/12 ([]) \OMS/cmsy/m/n/12 
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1616,15 +1616,15 @@ Package rerunfilecheck Info: File `VOYNICH_MANUSCRIPT.out' has not changed.
 
 Here is how much of LuaTeX's memory you used:
  34526 strings out of 477805
- 156366,1373583 words of node,token memory allocated
+ 195460,1373583 words of node,token memory allocated
  666 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 local_par, 4 glue, 4 kern, 1 penalty, 1 margin_ke
 rn, 4 glyph, 31 attribute, 62 glue_spec, 17 attribute_list, 2 write nodes
-   avail lists: 1:5,2:3273,3:400,4:2299,5:3381,6:171,7:9332,8:59,9:5092,10:33,11
-:789,12:1
+   avail lists: 1:4,2:3411,3:416,4:2523,5:3345,6:174,7:9664,8:58,9:5487,10:33,11
+:824,12:1
  53905 multiletter control sequences out of 65536+600000
  99 fonts using 39202487 bytes
- 83i,15n,84p,1299b,830s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 83i,15n,84p,2162b,830s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/opentype/public/gnu-freefont/FreeMonoObliqu
 e.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/gnu-freefont/FreeMono
 Bold.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/gnu-freefont/FreeM
@@ -1641,10 +1641,10 @@ ist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/symbols/msbm10.pfb>
-Output written on VOYNICH_MANUSCRIPT.pdf (29 pages, 1958837 bytes).
+Output written on VOYNICH_MANUSCRIPT.pdf (29 pages, 1959652 bytes).
 
-PDF statistics: 502 PDF objects out of 1000 (max. 8388607)
- 434 compressed objects within 5 object streams
+PDF statistics: 503 PDF objects out of 1000 (max. 8388607)
+ 435 compressed objects within 5 object streams
  122 named destinations out of 1000 (max. 131072)
  488 words of extra memory for PDF output out of 10000 (max. 100000000)
 
