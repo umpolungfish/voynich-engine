@@ -195,15 +195,59 @@ The Universal Imscriptive Grammar — of which this repository is the third, com
 
 ## Visualizations
 
-**Full-corpus animated call-graph** — 227 folios, 546 nodes, 694 edges, 149 cross-folio back-edges. Phase 1: nodes revealed in folio order. Phase 2: Gaussian pulse traverses the graph.
+### Full-corpus animated call-graph
+
+**Nodes** — 546 nodes, one per folio section extracted by the engine (folios f1r through f116v,
+227 folios total). Node size scales with degree (number of connections). Node color indicates
+manuscript section: botanical (green), biological (teal), balneological (blue), cosmological
+(purple), zodiac (orange), recipes (amber).
+
+**Edges** — 694 directed edges encoding the structural transition graph: an edge u → v means
+the engine's call-graph analysis identified a structural dependency from folio section u to
+section v (shared glyph families, sequential co-occurrence, or grammar rule reuse). Edge
+weight and alpha encode dependency strength.
+
+**Cross-folio back-edges** — 149 edges that cross folio boundaries in the reverse direction
+(v → u where u appears earlier in the manuscript than v). These are the cycles in the
+corpus graph. When a back-edge is first revealed in Phase 1, it flashes purple to mark the
+crossing.
+
+**Phase 1 — build:** Folio nodes appear one by one in manuscript order (f1r, f1v, f2r …
+f116v). Each newly revealed node is labelled with its folio ID. Forward edges to already-
+revealed nodes are drawn immediately; back-edges flash purple on appearance. The title bar
+shows the current folio and running edge count.
+
+**Phase 2 — flow wave:** A Gaussian amplitude pulse (σ ≈ N/6 nodes wide) travels
+node-by-node through the corpus in definition order, wrapping cyclically. Nodes near the
+pulse peak are enlarged and brightened toward white. Edges whose endpoints are both near
+the peak glow with higher linewidth and alpha. The title bar shows the current pulse
+position and the identity μ∘δ = id.
 
 ![Corpus CFG](docs/animated_cfg_corpus_voynich.gif)
 
-**Call-graph orbit** — rotating 3D view of the corpus topology.
+---
+
+### Call-graph orbit
+
+The full corpus call-graph rendered in 3D using a spring layout and rotated 360° around
+the vertical axis. Each frame is a different viewing angle. Shows the true topological
+shape of the corpus structure: dense core of heavily-connected folios, sparse periphery
+of isolated sections, and the long-range back-edge threads that connect distant parts
+of the manuscript. Color and size encoding matches the corpus CFG above.
 
 ![Call-graph orbit](docs/voynich_callgraph_orbit.gif)
 
-**Execution flow CFG** — IMASM opcode execution trace.
+---
+
+### IMASM execution flow CFG
+
+The 12 IMASM opcodes (VINIT, TANCH, AFWD, AREV, CLINK, ISCRIB, FSPLIT, FFUSE, EVALT,
+EVALF, ENGAGR, IFIX) mapped from the Voynich corpus, shown as a directed execution-flow
+graph. Each node is an opcode; each edge is a valid sequential transition (opcode A can
+be followed by opcode B in the compiled IMASM program). The Frobenius cycle
+FSPLIT → TANCH → AFWD → FFUSE → ISCRIB is highlighted in gold. Phase 1 reveals opcodes
+in pipeline order; Phase 2 sends a flow pulse around the execution graph, with the
+Frobenius cycle glowing brightest at each pass.
 
 ![Animated CFG](docs/animated_cfg.gif)
 
