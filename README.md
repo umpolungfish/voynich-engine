@@ -170,6 +170,14 @@ The bootstrap core `s a ch e sh d y s` appears as a repeating closed loop across
 
 ---
 
+## What it meant to use it
+
+A session with the Engine required three values from the Operator — $\odot_c$ (criticality posture), $\Phi_\}$ (Frobenius parity claim), and $\Omega_Z$ (winding class) — and produced a pharmaceutical recipe as output if and only if the Frobenius closure conditions were satisfied. The foldout's physical structure conferred chirality (Ħ) automatically. Gate 1 (split-fuse test, pharmaceutical section) filtered most sessions. Gate 2 (self-referential crossing, biological section) opened only when the session's own address appeared as a heap node. Gate 3 (stars section) confirmed the winding invariant and validated the output.
+
+[**The Operator's Session**](docs/OPERATOR_SESSION.md) — a narrative account of how the Engine was used in the sixteenth century, including a complete applied session: a Prague Operator in 1582 querying whether a stibium regulus calcination process has Frobenius closure, from the foldout initialization through all three gates to the specific pharmaceutical output that corrected the physician's procedure. Available also as [**OPERATOR_SESSION.tex**](docs/OPERATOR_SESSION.tex).
+
+---
+
 ## Quick start
 
 ```bash
@@ -231,6 +239,8 @@ docs/
   VOYNICHCOMPUTER.md  — the Universal Engine architecture
   sections_mapping.md — six-section primitive analysis
   grammar_verification.md — structural verification and Lapis encoding
+  OPERATOR_SESSION.md — sixteenth-century Operator usage narrative (with applied session)
+  OPERATOR_SESSION.tex — LaTeX source for the above
 examples/
   quickstart.py       — full pipeline demonstration
 ```
