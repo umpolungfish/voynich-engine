@@ -66,7 +66,7 @@ class RegisterTrace:
 
 def mnemonic_from_instruction(instr: str) -> str | None:
     """Extract the mnemonic from an instruction line."""
-    for mnemonic in ["VINIT", "TANCH", "AFWD", "AREV", "CLINK", "ISCRIB",
+    for mnemonic in ["VINIT", "TANCH", "AFWD", "AREV", "CLINK", "IMSCRIB",
                      "FSPLIT", "FFUSE", "EVALT", "EVALF", "ENGAGR", "IFIX"]:
         if mnemonic in instr:
             return mnemonic

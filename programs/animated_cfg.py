@@ -43,7 +43,7 @@ _FAMILY_COLOR: dict[str, str] = {
     "AFWD":   "#f28e2b",
     "AREV":   "#f28e2b",
     "CLINK":  "#f28e2b",
-    "ISCRIB": "#59a14f",
+    "IMSCRIB": "#59a14f",
     "IFIX":   "#59a14f",
     "EVALT":  "#e15759",
     "EVALF":  "#e15759",

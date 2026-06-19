@@ -1,4 +1,72 @@
+re-render animated_cfg_tokens.gif at k=0.55; add cfg_tokens_3d.html
+
+animated_cfg_tokens.gif: re-rendered at spring_layout k=0.55 (up from 0.12),
+11×11 figure, heavier node scaling (log exponent 1.6). Hub nodes now clearly
+separated: %r0 FSPLIT (in=149) and %r7 IMSCRIB (in=105) — the μ∘δ=id pair
+as a topological feature of the corpus.
+
+cfg_tokens_3d.html: interactive Plotly 3D decompressed-token CFG (1.3 MB).
+546 nodes, 4504 edges, 7 semantic edge types with colour-coded traces and
+arrowhead cones. IMSCRIB mnemonic corrected (global ISCRIB→IMSCRIB rename).
+
+---
+
+VOYNICH_MANUSCRIPT.tex: SNS_PRIME notation unification (Shavian + Everson Mono support)
+
+Preamble additions (paper already used LuaLaTeX/fontspec):
+  Added \newfontfamily\shavfont{Everson Mono}.
+  Added \newunicodechar redirects for full Shavian block U+10450–U+1047F.
+  Added \newunicodechar{⊙}{\ensuremath{\odot}}.
+  Added \usepackage{unicode-math} + \setmathfont{Latin Modern Math}.
+
+Notation: 63 replacements of Voynich-style subscript notation → Shavian glyphs:
+  Þ_6 (branching network) → 𐑡 (×6)
+  Þ_O (orbital/recurrent) → 𐑸 (×6)
+  Þ_K (nested crossing)   → 𐑥 (×4)
+  Ħ_∞ (eternal chirality) → 𐑫 (×9)
+  Ħ_A (two-step)          → 𐑖 (×2)
+  Ħ_£ (one-step)          → 𐑒 (×4)
+  Ħ_0 (no-history)        → 𐑓 (×3)
+  Ð_ω (imscription)       → 𐑦 (×4)
+  Ř_Ť (adjoint)           → 𐑽 (×4)
+  ƒ_ℓ (linear fidelity)   → 𐑱 (×1)
+  Φ_F (Frobenius-special) → 𐑹 (×3)
+  Φ_± (bilateral)         → 𐑬 (×1)
+  ⊙_sub (sub-critical)    → 𐑢 (×2)
+  ⊙_c (criticality)       → ⊙ (×3)
+  Σ_{1:1}                 → 𐑙 (×1)
+  Ω_z (ℤ-winding)         → 𐑭 (×8)
+  Ω_2 (ℤ₂-winding)        → 𐑴 (×1)
+  Ω_0 (trivial)           → 𐑷 (×1)
+
+---
+
 520 registers (not 208), 489/520 = 94.0% IFIX-burned, 17.02%
 steady-state paradox rate verified to 1,000,000 steps. Register
 space locks after one complete pass (44,445 steps); 208 was a
 mid-first-pass snapshot at step 10,000.
+
+---
+
+Add decompressed-token CFG pipeline (register-level with semantic split traces)
+
+voynich_engine/callgraph_tokens.py:
+  - Register-level graph (one node per instruction, same as callgraph.py)
+    with semantic edge decompression per token type:
+    ENGAGR → two split traces: ∅ to next reg + W to next ISCRIB in lookahead
+    ISCRIB → two split traces: src to next reg + ← backpop to next IFIX
+    FSPLIT → δ-split to next two regs
+    CLINK  → ∘→id to next reg (typed; CLINK_to_IFIX_never_occurs enforced)
+    others → flow to next reg
+  - EDGE_STYLE, TOKEN_FAMILY/TOKEN_COLOR, summary()
+
+programs/animated_cfg_tokens.py:
+  - Phase 1 (build): tokens appear in folio-linear instruction order;
+    ENGAGR flash shows ∅/W bifurcation; ISCRIB flash shows ← backpop
+  - Phase 2 (flow): pulse through bootstrap order;
+    semantic out-edges of active token highlighted by type
+  - Output: docs/animated_cfg_tokens.gif  (160 frames, 3.9 MB)
+
+VMS corpus stats: 227 folios · 44445 instructions
+Largest component: 546 nodes · 4511 edges
+Edge breakdown: backpop:893  empty:59  flow:489  frobenius:502  seq_clink:58  source:33  weighted:2477

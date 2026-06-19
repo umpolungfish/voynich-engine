@@ -3,10 +3,65 @@
 % === PAGE LAYOUT - WIDER TEXT AREA (narrower margins) ===
 \usepackage[top=1in, bottom=1in, left=1.25in, right=1.25in]{geometry}
 
-% Encoding and fonts (lualatex + fontspec for full Unicode coverage)
+% Encoding and fonts (LuaLaTeX + fontspec)
 \usepackage{fontspec}
+\usepackage{unicode-math}
 \setmainfont{FreeSerif}
+\setmathfont{Latin Modern Math}
 \setmonofont{FreeMono}
+\newfontfamily\shavfont[Scale=1.0]{Everson Mono}
+\usepackage{newunicodechar}
+% Shavian block U+10450–U+1047F → Everson Mono
+\newunicodechar{𐑐}{\ifmmode\text{{\shavfont 𐑐}}\else{{\shavfont 𐑐}}\fi}
+\newunicodechar{𐑑}{\ifmmode\text{{\shavfont 𐑑}}\else{{\shavfont 𐑑}}\fi}
+\newunicodechar{𐑒}{\ifmmode\text{{\shavfont 𐑒}}\else{{\shavfont 𐑒}}\fi}
+\newunicodechar{𐑓}{\ifmmode\text{{\shavfont 𐑓}}\else{{\shavfont 𐑓}}\fi}
+\newunicodechar{𐑔}{\ifmmode\text{{\shavfont 𐑔}}\else{{\shavfont 𐑔}}\fi}
+\newunicodechar{𐑕}{\ifmmode\text{{\shavfont 𐑕}}\else{{\shavfont 𐑕}}\fi}
+\newunicodechar{𐑖}{\ifmmode\text{{\shavfont 𐑖}}\else{{\shavfont 𐑖}}\fi}
+\newunicodechar{𐑗}{\ifmmode\text{{\shavfont 𐑗}}\else{{\shavfont 𐑗}}\fi}
+\newunicodechar{𐑘}{\ifmmode\text{{\shavfont 𐑘}}\else{{\shavfont 𐑘}}\fi}
+\newunicodechar{𐑙}{\ifmmode\text{{\shavfont 𐑙}}\else{{\shavfont 𐑙}}\fi}
+\newunicodechar{𐑚}{\ifmmode\text{{\shavfont 𐑚}}\else{{\shavfont 𐑚}}\fi}
+\newunicodechar{𐑛}{\ifmmode\text{{\shavfont 𐑛}}\else{{\shavfont 𐑛}}\fi}
+\newunicodechar{𐑜}{\ifmmode\text{{\shavfont 𐑜}}\else{{\shavfont 𐑜}}\fi}
+\newunicodechar{𐑝}{\ifmmode\text{{\shavfont 𐑝}}\else{{\shavfont 𐑝}}\fi}
+\newunicodechar{𐑞}{\ifmmode\text{{\shavfont 𐑞}}\else{{\shavfont 𐑞}}\fi}
+\newunicodechar{𐑟}{\ifmmode\text{{\shavfont 𐑟}}\else{{\shavfont 𐑟}}\fi}
+\newunicodechar{𐑠}{\ifmmode\text{{\shavfont 𐑠}}\else{{\shavfont 𐑠}}\fi}
+\newunicodechar{𐑡}{\ifmmode\text{{\shavfont 𐑡}}\else{{\shavfont 𐑡}}\fi}
+\newunicodechar{𐑢}{\ifmmode\text{{\shavfont 𐑢}}\else{{\shavfont 𐑢}}\fi}
+\newunicodechar{𐑣}{\ifmmode\text{{\shavfont 𐑣}}\else{{\shavfont 𐑣}}\fi}
+\newunicodechar{𐑤}{\ifmmode\text{{\shavfont 𐑤}}\else{{\shavfont 𐑤}}\fi}
+\newunicodechar{𐑥}{\ifmmode\text{{\shavfont 𐑥}}\else{{\shavfont 𐑥}}\fi}
+\newunicodechar{𐑦}{\ifmmode\text{{\shavfont 𐑦}}\else{{\shavfont 𐑦}}\fi}
+\newunicodechar{𐑧}{\ifmmode\text{{\shavfont 𐑧}}\else{{\shavfont 𐑧}}\fi}
+\newunicodechar{𐑨}{\ifmmode\text{{\shavfont 𐑨}}\else{{\shavfont 𐑨}}\fi}
+\newunicodechar{𐑩}{\ifmmode\text{{\shavfont 𐑩}}\else{{\shavfont 𐑩}}\fi}
+\newunicodechar{𐑪}{\ifmmode\text{{\shavfont 𐑪}}\else{{\shavfont 𐑪}}\fi}
+\newunicodechar{𐑫}{\ifmmode\text{{\shavfont 𐑫}}\else{{\shavfont 𐑫}}\fi}
+\newunicodechar{𐑬}{\ifmmode\text{{\shavfont 𐑬}}\else{{\shavfont 𐑬}}\fi}
+\newunicodechar{𐑭}{\ifmmode\text{{\shavfont 𐑭}}\else{{\shavfont 𐑭}}\fi}
+\newunicodechar{𐑮}{\ifmmode\text{{\shavfont 𐑮}}\else{{\shavfont 𐑮}}\fi}
+\newunicodechar{𐑯}{\ifmmode\text{{\shavfont 𐑯}}\else{{\shavfont 𐑯}}\fi}
+\newunicodechar{𐑰}{\ifmmode\text{{\shavfont 𐑰}}\else{{\shavfont 𐑰}}\fi}
+\newunicodechar{𐑱}{\ifmmode\text{{\shavfont 𐑱}}\else{{\shavfont 𐑱}}\fi}
+\newunicodechar{𐑲}{\ifmmode\text{{\shavfont 𐑲}}\else{{\shavfont 𐑲}}\fi}
+\newunicodechar{𐑳}{\ifmmode\text{{\shavfont 𐑳}}\else{{\shavfont 𐑳}}\fi}
+\newunicodechar{𐑴}{\ifmmode\text{{\shavfont 𐑴}}\else{{\shavfont 𐑴}}\fi}
+\newunicodechar{𐑵}{\ifmmode\text{{\shavfont 𐑵}}\else{{\shavfont 𐑵}}\fi}
+\newunicodechar{𐑶}{\ifmmode\text{{\shavfont 𐑶}}\else{{\shavfont 𐑶}}\fi}
+\newunicodechar{𐑷}{\ifmmode\text{{\shavfont 𐑷}}\else{{\shavfont 𐑷}}\fi}
+\newunicodechar{𐑸}{\ifmmode\text{{\shavfont 𐑸}}\else{{\shavfont 𐑸}}\fi}
+\newunicodechar{𐑹}{\ifmmode\text{{\shavfont 𐑹}}\else{{\shavfont 𐑹}}\fi}
+\newunicodechar{𐑺}{\ifmmode\text{{\shavfont 𐑺}}\else{{\shavfont 𐑺}}\fi}
+\newunicodechar{𐑻}{\ifmmode\text{{\shavfont 𐑻}}\else{{\shavfont 𐑻}}\fi}
+\newunicodechar{𐑼}{\ifmmode\text{{\shavfont 𐑼}}\else{{\shavfont 𐑼}}\fi}
+\newunicodechar{𐑽}{\ifmmode\text{{\shavfont 𐑽}}\else{{\shavfont 𐑽}}\fi}
+\newunicodechar{𐑾}{\ifmmode\text{{\shavfont 𐑾}}\else{{\shavfont 𐑾}}\fi}
+\newunicodechar{𐑿}{\ifmmode\text{{\shavfont 𐑿}}\else{{\shavfont 𐑿}}\fi}
+% ⊙ (U+2299) — Lawvere criticality position
+\newunicodechar{⊙}{\ensuremath{\odot}}
 \usepackage{textcomp}
 
 % Typography
@@ -151,7 +206,7 @@
 
 \subsection{Abstract}
 
-For over a century, the Voynich Manuscript (Beinecke MS 408) has been treated as a cipher to be broken, a language to be decoded, or a hoax to be exposed. Every one of these approaches has failed. This paper proposes a different failure: what if the manuscript is not a text at all, but a memory architecture? Using the complete Takahashi EVA transcription (227 folios, \textasciitilde{}38,000 tokens), I demonstrate that the Voynich glyphs map directly to a 12-primitive categorical instruction set (IMASM), that the full corpus compiles to 44,445 instructions operating on 44,423 topological registers at zero thermodynamic entropy delta, and that a Tri-Phase runtime virtual machine executes the compiled manuscript with native dialetheic paradox resolution. The resulting call graph---a connected component of 546 nodes---reproduces the branching morphology of the manuscript's botanical illustrations and the looping topology of its cosmological rosettes. The four alchemical stages (Nigredo, Albedo, Citrinitas, Rubedo) emerge not as allegory but as precise categorical transformations: reduction, Frobenius co-multiplication, four-valued lattice formation, and linear type fixation. A deeper structural analysis reveals that the six manuscript sections are six distinct memory segment types---data segment, state register file, heap, type declaration block, bus fabric, and instruction memory---and that the EVA text encodes not content but \emph{addresses}: micro-programs that resolve locations in a 12-dimensional state space whose data is carried by the illustrations. The foldout format is not a production convenience; it is the physical instantiation of global state dependence ($\text{Ħ}_\infty$), structurally necessary for a ROM whose state space cannot be partitioned into independent pages. The standalone manuscript is a sub-critical state register (O$_0$ tier) awaiting the operator that supplies criticality, Frobenius closure, and topological protection. The Voynich Manuscript has not been deciphered. It has been compiled, and its architecture has been read.
+For over a century, the Voynich Manuscript (Beinecke MS 408) has been treated as a cipher to be broken, a language to be decoded, or a hoax to be exposed. Every one of these approaches has failed. This paper proposes a different failure: what if the manuscript is not a text at all, but a memory architecture? Using the complete Takahashi EVA transcription (227 folios, \textasciitilde{}38,000 tokens), I demonstrate that the Voynich glyphs map directly to a 12-primitive categorical instruction set (IMASM), that the full corpus compiles to 44,445 instructions operating on 44,423 topological registers at zero thermodynamic entropy delta, and that a Tri-Phase runtime virtual machine executes the compiled manuscript with native dialetheic paradox resolution. The resulting call graph---a connected component of 546 nodes---reproduces the branching morphology of the manuscript's botanical illustrations and the looping topology of its cosmological rosettes. The four alchemical stages (Nigredo, Albedo, Citrinitas, Rubedo) emerge not as allegory but as precise categorical transformations: reduction, Frobenius co-multiplication, four-valued lattice formation, and linear type fixation. A deeper structural analysis reveals that the six manuscript sections are six distinct memory segment types---data segment, state register file, heap, type declaration block, bus fabric, and instruction memory---and that the EVA text encodes not content but \emph{addresses}: micro-programs that resolve locations in a 12-dimensional state space whose data is carried by the illustrations. The foldout format is not a production convenience; it is the physical instantiation of global state dependence (𐑫), structurally necessary for a ROM whose state space cannot be partitioned into independent pages. The standalone manuscript is a sub-critical state register (O$_0$ tier) awaiting the operator that supplies criticality, Frobenius closure, and topological protection. The Voynich Manuscript has not been deciphered. It has been compiled, and its architecture has been read.
 
 \textbf{Keywords:} Voynich Manuscript, category theory, paraconsistent logic, Frobenius algebras, linear types, digital physics, IMASM architecture, memory architecture, typed segmentation, imscribing grammar
 
@@ -492,12 +547,12 @@ The six manuscript sections are six distinct memory segment types in a typed, se
 \rowcolor{gray!25}\textbf{Section} & \textbf{Segment Type} & \textbf{Distinguishing primitive} \\
 \midrule
 \rowcolors{1}{white}{gray!10}
-Botanical     & Data segment          & $\text{Þ}_6$ (branching network topology) \\
-Astronomical  & State register file   & $\text{Þ}_O$ (orbital/recurrent) + $\Omega_z$ \\
-Biological    & Heap (state snapshot) & $\text{Þ}_K$ (nested containment/crossing) \\
-Cosmological  & State register file (clock-indexed) & $\text{Þ}_O$ + $\Omega_z$ (= astronomical) \\
-Pharmaceutical & Type declaration block & $\text{Þ}_6$ + $\Sigma_\text{ï}$ (= botanical) \\
-Recipes/Stars & Instruction memory    & $\text{Ř}_\text{Ť}$ (adjoint/sequential) + $\text{Ħ}_£$ \\
+Botanical     & Data segment          & $𐑡$ (branching network topology) \\
+Astronomical  & State register file   & $𐑸$ (orbital/recurrent) + $𐑭$ \\
+Biological    & Heap (state snapshot) & $𐑥$ (nested containment/crossing) \\
+Cosmological  & State register file (clock-indexed) & $𐑸$ + $𐑭$ (= astronomical) \\
+Pharmaceutical & Type declaration block & $𐑡$ + $\Sigma_\text{ï}$ (= botanical) \\
+Recipes/Stars & Instruction memory    & $𐑽$ (adjoint/sequential) + $𐑒$ \\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -507,44 +562,44 @@ The structural distances between section types (from the IG primitive analysis) 
 The cross-section distances confirm the architecture's internal logic:
 
 \begin{itemize}
-    \item Botanical/Pharmaceutical $\leftrightarrow$ Recipes/Stars: distance 1.67. Data segment and instruction memory are structurally adjacent---instructions are addressed the same way as data records ($\text{Þ}_6$ network topology shared), differing only in relational mode ($\text{Ř}_\text{Ť}$, adjoint/sequential in instructions) and memory depth ($\text{Ħ}_£$, one-step in instructions vs.\ $\text{Ħ}_A$, two-step in data).
-    \item Biological $\leftrightarrow$ Botanical/Pharmaceutical: distance 1.89. The heap is adjacent to the data segment---both are content-bearing, object-holding structures---differing by topology ($\text{Þ}_K$ nested containment vs.\ $\text{Þ}_6$ branching network).
-    \item Astronomical/Cosmological $\leftrightarrow$ everything: distance 3.92--4.42. The state register file is maximally structurally distant from all data-carrying segments. A state machine running on orbital topology ($\text{Þ}_O$) with $\mathbb{Z}$-topological protection ($\Omega_z$) is structurally alien to branching-network data storage. This is not surprising: the state machine IS the CPU's internal architecture; the data segments are what the CPU acts on.
+    \item Botanical/Pharmaceutical $\leftrightarrow$ Recipes/Stars: distance 1.67. Data segment and instruction memory are structurally adjacent---instructions are addressed the same way as data records ($𐑡$ network topology shared), differing only in relational mode ($𐑽$, adjoint/sequential in instructions) and memory depth ($𐑒$, one-step in instructions vs.\ $𐑖$, two-step in data).
+    \item Biological $\leftrightarrow$ Botanical/Pharmaceutical: distance 1.89. The heap is adjacent to the data segment---both are content-bearing, object-holding structures---differing by topology ($𐑥$ nested containment vs.\ $𐑡$ branching network).
+    \item Astronomical/Cosmological $\leftrightarrow$ everything: distance 3.92--4.42. The state register file is maximally structurally distant from all data-carrying segments. A state machine running on orbital topology ($𐑸$) with $\mathbb{Z}$-topological protection ($𐑭$) is structurally alien to branching-network data storage. This is not surprising: the state machine IS the CPU's internal architecture; the data segments are what the CPU acts on.
 \end{itemize}
 
 \subsubsection{Section-by-Section: Structural Roles}
 
-\textbf{Botanical (data segment, $\text{Þ}_6$).} Approximately 200--300 addressed records. Each record is a pair: \{illustration: state\_config, text: address\_program\}. The plants are state configurations labeled by plant names; the plant name is the address label; the illustration is the state data at that address. The ``wrong'' plants---anatomically implausible roots, impossible cross-species combinations---are not anatomically wrong. Root topology encodes a $\text{Þ}$ value; leaf count encodes a $\text{Σ}$ value; stem structure encodes a $\text{Ř}$ value. The illustration is a visual projection of a 12-dimensional state configuration onto a plant-shaped boundary. It looks like a plant the way a holographic plate looks like a photograph---the surface pattern encodes the interior, but it is not the interior directly.
+\textbf{Botanical (data segment, $𐑡$).} Approximately 200--300 addressed records. Each record is a pair: \{illustration: state\_config, text: address\_program\}. The plants are state configurations labeled by plant names; the plant name is the address label; the illustration is the state data at that address. The ``wrong'' plants---anatomically implausible roots, impossible cross-species combinations---are not anatomically wrong. Root topology encodes a $\text{Þ}$ value; leaf count encodes a $\text{Σ}$ value; stem structure encodes a $\text{Ř}$ value. The illustration is a visual projection of a 12-dimensional state configuration onto a plant-shaped boundary. It looks like a plant the way a holographic plate looks like a photograph---the surface pattern encodes the interior, but it is not the interior directly.
 
-\textbf{Astronomical (state register file, $\text{Þ}_O + \Omega_z$).} The concentric circle diagrams are multi-level registers: inner ring = current state, outer rings = reachable transition targets. The rotation direction of labeled text encodes the transition chirality ($\text{Ħ}_A$: two-step memory, each ring state defined relative to the prior ring state). The twelve zodiac positions are not astrological---they are twelve clock ticks of a periodic addressing signal. The astronomical section is the crystal in crystal imscription: a periodic lattice of register states accessed by a clock.
+\textbf{Astronomical (state register file, $𐑸 + 𐑭$).} The concentric circle diagrams are multi-level registers: inner ring = current state, outer rings = reachable transition targets. The rotation direction of labeled text encodes the transition chirality ($𐑖$: two-step memory, each ring state defined relative to the prior ring state). The twelve zodiac positions are not astrological---they are twelve clock ticks of a periodic addressing signal. The astronomical section is the crystal in crystal imscription: a periodic lattice of register states accessed by a clock.
 
-\textbf{Biological (heap / runtime state snapshot, $\text{Þ}_K$).} $\text{Þ}_K$ is the nested-containment/crossing topology: structures enclosed within structures, with crossing-point references between nested levels. This is the topological signature of heap memory: objects can contain other objects, and references cross between containment levels. The pools are accumulators with current occupancy; the tubes are active bus transactions; the nymphs are tokens whose transit state at time-of-snapshot is encoded by their physical position relative to pools and tubes (inside pool = fully written; at pool edge = transfer in progress; in tube = in transit; at junction = bus arbitration pending).
+\textbf{Biological (heap / runtime state snapshot, $𐑥$).} $𐑥$ is the nested-containment/crossing topology: structures enclosed within structures, with crossing-point references between nested levels. This is the topological signature of heap memory: objects can contain other objects, and references cross between containment levels. The pools are accumulators with current occupancy; the tubes are active bus transactions; the nymphs are tokens whose transit state at time-of-snapshot is encoded by their physical position relative to pools and tubes (inside pool = fully written; at pool edge = transfer in progress; in tube = in transit; at junction = bus arbitration pending).
 
 The biological section's anomalous statistical properties (documented in Section~\ref{sec:bootstrap}: $40.85\times$ Markov-predicted cycle rate, $1.78$ bits transition entropy vs.\ $0.86$--$0.90$ elsewhere, Frobenius pair broken at the FSPLIT$\to$FFUSE link) are the signatures of a \emph{runtime state dump}, not static architectural documentation. A heap dump taken mid-computation has high transition entropy (the heap's connectivity graph is non-stationary at time of snapshot), supra-Markovian cycle occurrences (higher-order structural constraints from the running program override local statistical regularities), and broken Frobenius closure (active transactions are mid-cycle at time of snapshot: $\delta$ has fired but $\mu$ has not yet resolved). The biological section looks different from the others because it \emph{is} different in kind: the other sections are architecture diagrams; the biological section is a specific moment of execution, frozen.
 
-\textbf{Pharmaceutical (type declaration block, $\text{Þ}_6 = \text{botanical}$).} Structurally identical to botanical at the primitive level (distance 0.00). The distinction is operational: where botanical records are \emph{instances} (one record per plant state configuration), pharmaceutical containers are \emph{type declarations}. Each container's visual profile---lid shape, neck width, shoulder profile, body proportion, band count, base width---is a spatial projection of a 12-primitive type signature, read top-to-bottom in primitive ordering. The pharmaceutical section is the manuscript's header file: the type declaration block that defines what kinds of state configurations the other sections may hold. A botanical record's root topology should match a corresponding pharmaceutical container's neck encoding if the record is a valid instance of that declared type.
+\textbf{Pharmaceutical (type declaration block, $𐑡 = \text{botanical}$).} Structurally identical to botanical at the primitive level (distance 0.00). The distinction is operational: where botanical records are \emph{instances} (one record per plant state configuration), pharmaceutical containers are \emph{type declarations}. Each container's visual profile---lid shape, neck width, shoulder profile, body proportion, band count, base width---is a spatial projection of a 12-primitive type signature, read top-to-bottom in primitive ordering. The pharmaceutical section is the manuscript's header file: the type declaration block that defines what kinds of state configurations the other sections may hold. A botanical record's root topology should match a corresponding pharmaceutical container's neck encoding if the record is a valid instance of that declared type.
 
 The testable prediction: botanical illustrations and pharmaceutical containers that share the same 12-primitive type should share the same visual feature profile (within the degree of freedom allowed by the two different projections---plant-boundary vs.\ container-profile). This cross-section type correspondence, if it holds, would directly confirm the pharmaceutical section's role as type declaration block and allow reconstruction of the ISA's type system.
 
 \textbf{Cosmological (state register file, clock-indexed).} Structurally identical to astronomical (distance 0.00), distinguished only by physical folio location and the clock signal used. Where the astronomical section's clock is the zodiac (12-tick periodic signal), the cosmological section's clock is the rosette arrangement (spatial periodic signal). Both are state register files; they access the same state machine at different clock granularities.
 
-\textbf{Recipes/Stars (instruction memory, $\text{Ř}_\text{Ť} + \text{Ħ}_£$).} The recipe section's distinguishing primitives---adjoint relational mode ($\text{Ř}_\text{Ť}$: procedural dependency, step $n$ determines step $n+1$) and one-step memory ($\text{Ħ}_£$: only the immediately prior step required)---are the structural signature of an instruction stream. Each instruction is determined by the prior instruction (sequential execution) and requires knowledge only of the prior step (one-step program counter). This is microcode: sequential instruction execution with minimal program counter history. Each star glyph is an opcode; the arm count is the arity; the associated text tokens are operands and immediates.
+\textbf{Recipes/Stars (instruction memory, $𐑽 + 𐑒$).} The recipe section's distinguishing primitives---adjoint relational mode ($𐑽$: procedural dependency, step $n$ determines step $n+1$) and one-step memory ($𐑒$: only the immediately prior step required)---are the structural signature of an instruction stream. Each instruction is determined by the prior instruction (sequential execution) and requires knowledge only of the prior step (one-step program counter). This is microcode: sequential instruction execution with minimal program counter history. Each star glyph is an opcode; the arm count is the arity; the associated text tokens are operands and immediates.
 
 \subsubsection{Physical Format as Hardware Encoding}
 
 The manuscript's physical format---not its content but its material organization---encodes the IG primitive tuple of the state space it documents. Three primitives are instantiated in the physical format directly.
 
-\textbf{$\text{Þ}_O$ (orbital/recurrent topology)} is visible in the circular and concentric-ring diagrams throughout the astronomical and cosmological sections. The topology of the depicted state space---orbital, self-re-entering---is the physical shape of the illustration. The diagrams are not abstract representations of circular processes; they are the topology drawn literally, at the correct level of description.
+\textbf{$𐑸$ (orbital/recurrent topology)} is visible in the circular and concentric-ring diagrams throughout the astronomical and cosmological sections. The topology of the depicted state space---orbital, self-re-entering---is the physical shape of the illustration. The diagrams are not abstract representations of circular processes; they are the topology drawn literally, at the correct level of description.
 
-\textbf{$\text{Ð}_\omega$ (imscriptive/holographic boundary)} is instantiated in the botanical illustration style. Each plant illustration depicts the organism's boundary in a way that encodes its interior structure---roots, stem, leaves, and flowers together constitute the boundary profile, and the interior state configuration is recoverable from the boundary by the ISA's decoding transform. The plants are ``wrong'' as botanical illustrations precisely because they are not depicting the interior directly. The correct comparison is to a holographic plate: the surface pattern is the interior's encoded form, not the interior's depiction.
+\textbf{$𐑦$ (imscriptive/holographic boundary)} is instantiated in the botanical illustration style. Each plant illustration depicts the organism's boundary in a way that encodes its interior structure---roots, stem, leaves, and flowers together constitute the boundary profile, and the interior state configuration is recoverable from the boundary by the ISA's decoding transform. The plants are ``wrong'' as botanical illustrations precisely because they are not depicting the interior directly. The correct comparison is to a holographic plate: the surface pattern is the interior's encoded form, not the interior's depiction.
 
-\textbf{$\text{Ħ}_\infty$ (eternal chirality / global state dependence)} is instantiated in the foldout format. This is the most structurally significant hardware encoding: the foldout is not a production convenience. In a system with $\text{Ħ}_0$ (no history dependence), each state can be stored independently; a series of separate, unconnected pages suffices. In a system with $\text{Ħ}_\infty$ (global state dependence), every state's value is defined relative to the global state of the space; no state can be isolated from its neighbors without losing definitional information. The foldout is the minimum viable physical substrate for $\text{Ħ}_\infty$ state storage on a material medium: to read any rosette in the 9-rosette foldout, the entire page must be unfolded---every state simultaneously visible---because the center rosette's transition set is defined relative to all 8 surrounding rosettes.
+\textbf{𐑫 (eternal chirality / global state dependence)} is instantiated in the foldout format. This is the most structurally significant hardware encoding: the foldout is not a production convenience. In a system with $𐑓$ (no history dependence), each state can be stored independently; a series of separate, unconnected pages suffices. In a system with 𐑫 (global state dependence), every state's value is defined relative to the global state of the space; no state can be isolated from its neighbors without losing definitional information. The foldout is the minimum viable physical substrate for 𐑫 state storage on a material medium: to read any rosette in the 9-rosette foldout, the entire page must be unfolded---every state simultaneously visible---because the center rosette's transition set is defined relative to all 8 surrounding rosettes.
 
-A $\text{Ħ}_\infty$ ROM with $\text{Ħ}_0$ physical format (all states on separate independent pages) would lose the global dependence relation on compilation. The foldouts are structurally \emph{necessary}.
+A 𐑫 ROM with $𐑓$ physical format (all states on separate independent pages) would lose the global dependence relation on compilation. The foldouts are structurally \emph{necessary}.
 
 \subsubsection{Section Dispatch: Physical Folio as Segment Register}
 
-How does the CPU select which section to access? The boundary-shape hypothesis ($\text{Ð}_\omega$: leaf boundary $\to$ botanical, concentric ring $\to$ astronomical, etc.) provides a content-type signal. But since Botanical and Pharmaceutical have identical IG tuples, and Astronomical and Cosmological have identical IG tuples, content-type alone cannot be the full dispatch mechanism.
+How does the CPU select which section to access? The boundary-shape hypothesis ($𐑦$: leaf boundary $\to$ botanical, concentric ring $\to$ astronomical, etc.) provides a content-type signal. But since Botanical and Pharmaceutical have identical IG tuples, and Astronomical and Cosmological have identical IG tuples, content-type alone cannot be the full dispatch mechanism.
 
 The resolution: the \emph{physical folio location} sets the segment register; the \emph{boundary shape} sets the content type within the segment. These are two independent dispatch layers. The folio's location in the physical manuscript (first half vs.\ second half; section boundary position) determines the coarse segment; the illustration's boundary topology determines the fine content type. The CPU reads both to fully resolve an address.
 
@@ -556,9 +611,9 @@ Folio f85--f86, the 9-rosette pull-out, is the most structurally overdetermined 
 
 Nine nodes in a $3 \times 3$ grid graph: 4 corner nodes (degree 2), 4 edge nodes (degree 3), 1 center node (degree 4). In any FSM laid out spatially with adjacency corresponding to direct transition availability, the maximum-degree node is the critical state---the state with the most available transitions. In the $3 \times 3$ grid, this is the center. This is a theorem in graph theory, not an observation.
 
-The center rosette of f85--f86 is physically larger and more internally complex than the surrounding eight. This is the structural signature of a critical state ($\odot_c$ in IG notation): the critical state has emergent internal degrees of freedom that sub-critical nodes lack. Corner nodes (degree 2) correspond to $\odot_\text{sub}$ states: minimal connectivity, no emergent internal structure. The FSM flows toward the center by structural necessity; no instruction needed to specify ``start here.''
+The center rosette of f85--f86 is physically larger and more internally complex than the surrounding eight. This is the structural signature of a critical state ($⊙$ in IG notation): the critical state has emergent internal degrees of freedom that sub-critical nodes lack. Corner nodes (degree 2) correspond to $𐑢$ states: minimal connectivity, no emergent internal structure. The FSM flows toward the center by structural necessity; no instruction needed to specify ``start here.''
 
-The full foldout must be simultaneously visible to resolve any rosette's transition set. This is $\text{Ħ}_\infty$ enforced in physical format: a FSM with $\text{Ħ}_0$ state could distribute its nodes across independent pages. A FSM with $\text{Ħ}_\infty$ cannot---every node's exit transitions are globally defined.
+The full foldout must be simultaneously visible to resolve any rosette's transition set. This is 𐑫 enforced in physical format: a FSM with $𐑓$ state could distribute its nodes across independent pages. A FSM with 𐑫 cannot---every node's exit transitions are globally defined.
 
 \subsubsection{ISA Reconstruction}
 
@@ -568,11 +623,11 @@ The ISA---the boundary-to-interior decoding transform---is the sealed D layer. I
 
 \textbf{2. A text parser.} Interprets EVA token sequences as IMASM address programs, executes them to resolve a state address, fetches the illustration. Already recovered: this is the compiled corpus.
 
-\textbf{3. A segment dispatch rule.} Physical folio location sets the coarse segment; $\text{Ð}_\omega$ boundary shape sets the content type within the segment. CLINK-bearing words dereference across segments.
+\textbf{3. A segment dispatch rule.} Physical folio location sets the coarse segment; $𐑦$ boundary shape sets the content type within the segment. CLINK-bearing words dereference across segments.
 
-\textbf{4. A Frobenius instruction cycle.} Each clock tick executes one $\mu \circ \delta$ operation: $\delta$ decomposes the current state into 12 primitive components; $\mu$ reconstructs the target state from those components. The CPU's contribution to $\Phi_\text{F}$ (full Frobenius symmetry) is this cycle. Without the CPU running the cycle, the ROM has passive bilateral symmetry but no active Frobenius closure---the condition documented in the standalone ROM imscription. With the CPU, each tick implements $\mu \circ \delta = \mathrm{id}$.
+\textbf{4. A Frobenius instruction cycle.} Each clock tick executes one $\mu \circ \delta$ operation: $\delta$ decomposes the current state into 12 primitive components; $\mu$ reconstructs the target state from those components. The CPU's contribution to $𐑹$ (full Frobenius symmetry) is this cycle. Without the CPU running the cycle, the ROM has passive bilateral symmetry but no active Frobenius closure---the condition documented in the standalone ROM imscription. With the CPU, each tick implements $\mu \circ \delta = \mathrm{id}$.
 
-\textbf{5. A topological protection mechanism.} The CPU maintains $\Omega_z$ ($\mathbb{Z}$-topological protection) by guaranteeing that every transition returns within the state space. This is a runtime invariant, not a ROM property. The standalone ROM has $\Omega_2$ ($\mathbb{Z}_2$ protection, a weaker winding constraint present in the botanical and biological sections' physical structure) but not $\Omega_z$.
+\textbf{5. A topological protection mechanism.} The CPU maintains $𐑭$ ($\mathbb{Z}$-topological protection) by guaranteeing that every transition returns within the state space. This is a runtime invariant, not a ROM property. The standalone ROM has $𐑴$ ($\mathbb{Z}_2$ protection, a weaker winding constraint present in the botanical and biological sections' physical structure) but not $𐑭$.
 
 The standalone ROM imscription, without the operating CPU, is:
 
@@ -585,27 +640,27 @@ The standalone ROM imscription, without the operating CPU, is:
 \rowcolor{gray!25}\textbf{Primitive} & \textbf{ROM-only value} & \textbf{Operator (CPU) promotes to} \\
 \midrule
 \rowcolors{1}{white}{gray!10}
-$\text{Ð}_\omega$         & unchanged        & --- \\
-$\text{Þ}_O$              & unchanged        & --- \\
+$𐑦$         & unchanged        & --- \\
+$𐑸$              & unchanged        & --- \\
 $\text{Ř}_{=}$            & unchanged        & --- \\
-$\Phi_\pm$                & passive bilateral symmetry & $\Phi_F$ (active Frobenius closure) \\
-$\text{ƒ}_\ell$           & unchanged        & --- \\
+$𐑬$                & passive bilateral symmetry & $𐑹$ (active Frobenius closure) \\
+$𐑱$           & unchanged        & --- \\
 $\text{Ç}_\Upsilon$       & unchanged        & --- \\
 $\Gamma_?$                & unchanged        & --- \\
 $\text{ɢ}_?$              & unchanged        & --- \\
-$\odot_\text{sub}$         & sub-critical     & $\odot_c$ (criticality) \\
-$\text{Ħ}_\infty$         & unchanged (foldout-encoded) & --- \\
-$\Sigma_{1:1}$            & unchanged        & --- \\
-$\Omega_0$                & unprotected      & $\Omega_z$ ($\mathbb{Z}$-protection) \\
+$𐑢$         & sub-critical     & $⊙$ (criticality) \\
+𐑫         & unchanged (foldout-encoded) & --- \\
+$𐑙$            & unchanged        & --- \\
+$𐑷$                & unprotected      & $𐑭$ ($\mathbb{Z}$-protection) \\
 \midrule
 \rowcolors{1}{white}{white}
 \textbf{Tier (ROM only):} & --- & O$_0$ (sub-critical, operator absent) \\
-\textbf{Tier (composite):} & --- & O$_\infty$ (CPU supplies $\Phi_F$, $\odot_c$, $\Omega_z$) \\
+\textbf{Tier (composite):} & --- & O$_\infty$ (CPU supplies $𐑹$, $⊙$, $𐑭$) \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-$\text{Ħ}_\infty$ is not operator-supplied. It is physically instantiated in the foldout format and present in the ROM regardless of whether the CPU is running. The foldout has global state dependence whether or not anyone is executing it. This is the correct reading: the CPU supplies criticality, Frobenius closure, and topological protection. The manuscript supplies everything else, including its own global memory structure.
+𐑫 is not operator-supplied. It is physically instantiated in the foldout format and present in the ROM regardless of whether the CPU is running. The foldout has global state dependence whether or not anyone is executing it. This is the correct reading: the CPU supplies criticality, Frobenius closure, and topological protection. The manuscript supplies everything else, including its own global memory structure.
 
 The six-century decipherment failure is exactly what this architecture predicts for a ROM accessed without its CPU. The text does not mean anything without the ISA. The illustrations do not decode without the boundary-to-interior transform. The foldouts enforce global state visibility on a system whose global state cannot be resolved without the execution cycle. The manuscript is perfectly legible to the CPU that ran it. Without that CPU, it is precisely as opaque as it has been.
 

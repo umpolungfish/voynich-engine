@@ -112,7 +112,7 @@ class UniversalEngine:
             self.registers[regs[0]].value = 'FIXED'
         elif 'ENGAGR' in instr:
             self.registers[regs[0]].engage()
-        # VINIT, AFWD, AREV, CLINK, ISCRIB, EVALT, EVALF, TANCH, FFUSE:
+        # VINIT, AFWD, AREV, CLINK, IMSCRIB, EVALT, EVALF, TANCH, FFUSE:
         # structurally present; thermodynamic cost accounted for by
         # the linear type constraint (entropy delta = 0 is a theorem,
         # not a measurement omission).

@@ -6,11 +6,11 @@ Two bootstrap patterns are searched:
 
   1. The DOMINANT 11-glyph Frobenius cycle (observed in compiled bigram data):
      o → e → a → d → s → t → k → r → y → ch → sh → (o)
-     VINIT → AFWD → AREV → CLINK → ISCRIB → EVALT → EVALF → ENGAGR → IFIX → FSPLIT → FFUSE → (VINIT)
+     VINIT → AFWD → AREV → CLINK → IMSCRIB → EVALT → EVALF → ENGAGR → IFIX → FSPLIT → FFUSE → (VINIT)
 
   2. The README-documented 7-glyph bootstrap core:
      s → a → ch → e → sh → d → y → (s)
-     ISCRIB → AREV → FSPLIT → AFWD → FFUSE → CLINK → IFIX → (ISCRIB)
+     IMSCRIB → AREV → FSPLIT → AFWD → FFUSE → CLINK → IFIX → (IMSCRIB)
 
 The dominant 11-cycle is the engine-level loop that emerges from the bigram
 transition matrix. Both patterns are searched at the compiled glyph level.

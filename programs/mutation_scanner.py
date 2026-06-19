@@ -129,7 +129,7 @@ def mutate_insert(glyphs: list[str], rate: float, rng: random.Random) -> list[st
 
 def mutate_knockout(glyphs: list[str], target: str) -> list[str]:
     """Remove ALL instances of a specific glyph."""
-    return [g if g != target else "s" for g in glyphs]  # replace with ISCRIB (identity)
+    return [g if g != target else "s" for g in glyphs]  # replace with IMSCRIB (identity)
 
 
 def mutate_section_only(

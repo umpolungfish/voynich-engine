@@ -42,7 +42,7 @@ CPT_MAP = {
     'ch': 'y',   # T: FSPLIT ↔ IFIX  (split ↔ fix = time-reversal of creation)
     'y':  'ch',
     'd':  'd',   # CLINK is self-conjugate under CPT (composition is its own reverse)
-    's':  's',   # ISCRIB is self-conjugate (identity reverses to identity)
+    's':  's',   # IMSCRIB is self-conjugate (identity reverses to identity)
     'sh': 'sh',  # FFUSE: self-conjugate (fuse of fuse = fuse)
     't':  'k',   # C+P: EVALT ↔ EVALF (True ↔ False = charge+parity flip)
     'k':  't',

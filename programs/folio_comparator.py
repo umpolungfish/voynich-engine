@@ -41,7 +41,7 @@ def glyphs_from_instructions(instructions: list[str]) -> list[str]:
     """Extract ordered glyph list from compiled instructions."""
     glyphs = []
     for instr in instructions:
-        for mnemonic in ["VINIT", "TANCH", "AFWD", "AREV", "CLINK", "ISCRIB",
+        for mnemonic in ["VINIT", "TANCH", "AFWD", "AREV", "CLINK", "IMSCRIB",
                          "FSPLIT", "FFUSE", "EVALT", "EVALF", "ENGAGR", "IFIX"]:
             if mnemonic in instr:
                 glyphs.append(MNEMONIC_TO_GLYPH[mnemonic])

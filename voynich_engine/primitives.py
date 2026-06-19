@@ -13,7 +13,7 @@ PRIMITIVES: dict[str, dict] = {
     'e':  {'opcode': 0x2, 'mnemonic': 'AFWD',   'operation': 'Morphism →',                  'family': 'logical'},
     'a':  {'opcode': 0x3, 'mnemonic': 'AREV',   'operation': 'Contravariant inversion ←',   'family': 'logical'},
     'd':  {'opcode': 0x4, 'mnemonic': 'CLINK',  'operation': 'Composition ∘',               'family': 'logical'},
-    's':  {'opcode': 0x5, 'mnemonic': 'ISCRIB', 'operation': 'Identity id',                 'family': 'logical'},
+    's':  {'opcode': 0x5, 'mnemonic': 'IMSCRIB', 'operation': 'Identity id',                 'family': 'logical'},
     'ch': {'opcode': 0x6, 'mnemonic': 'FSPLIT', 'operation': 'Frobenius co-multiplication δ', 'family': 'frobenius'},
     'sh': {'opcode': 0x7, 'mnemonic': 'FFUSE',  'operation': 'Frobenius multiplication μ',  'family': 'frobenius'},
     't':  {'opcode': 0x8, 'mnemonic': 'EVALT',  'operation': 'Lattice: True',               'family': 'dialetheia'},
