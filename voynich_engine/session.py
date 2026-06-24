@@ -1,15 +1,16 @@
 """
-Six-gate Voynich session protocol.
+Seven-gate Voynich session protocol.
 
 Runs the Operator session architecture against the pharmacy and recipe
 JSON corpora and the live LSI transcription:
 
   INIT    — cosmological foldout; chirality Ħ=𐑖 conferred physically
-  ADDR    — botanical section: folio address locked from query
+  ADDR    — botanical section: identity confirmed by d(plant, botanical) ≤ ceiling
   GATE1   — pharmaceutical Frobenius closure test (pharmacy.json)
   GATE2   — biological heap: Frobenius balance on compiled botanical folio
   GATE3   — astronomical winding verification (f69, sources H/F/U)
   OUTPUT  — recipe section: procedural output matched to Gate 1 forma
+  ELABORATION — opcode annotation with tuple-derived protocol parameters
 """
 
 from __future__ import annotations
@@ -107,6 +108,8 @@ class SessionState:
     omega: str = ''                      # 'integer' or 'binary'
     folio: str = ''
     para: int = 0
+    addr_d_botanical: float = -1.0       # -1 = not checked
+    addr_passed: bool = False
     gate1: Optional[PharmEntry] = None
     gate2_balance: tuple = (0, 0)        # (fsplit, ffuse) from compiled folio
     gate2_passed: bool = False
@@ -229,7 +232,30 @@ class VoynichSession:
             hits = [e for e in hits if kw in e.forma.lower()]
         return hits
 
+    # Botanical identity ceiling: all known phytoglyphica entries are ≤ 1.3;
+    # ceiling at 1.5 rejects catalog entries that are not botanical objects.
+    _BOTANICAL_CEILING = 1.5
+
     # ---- gate implementations ----------------------------------------------
+
+    def _gate_addr(self, state: SessionState, d_botanical: float) -> bool:
+        """
+        ADDR — botanical section identity gate (f1–f66).
+
+        Confirms that the plant's structural address falls within the botanical
+        section's structural field before the pharmaceutical section is queried.
+        Passes when d(plant, botanical_section) ≤ _BOTANICAL_CEILING.
+        """
+        passed = d_botanical <= self._BOTANICAL_CEILING
+        state.addr_d_botanical = d_botanical
+        state.addr_passed = passed
+        state.emit(
+            f'ADDR  botanical identity  '
+            f'd(plant,botanical)={d_botanical:.4f}  '
+            f'{"≤" if passed else ">"}{self._BOTANICAL_CEILING}  '
+            f'{"PASS" if passed else "FAIL — not a botanical entry"}'
+        )
+        return passed
 
     def _gate_init(self, state: SessionState) -> None:
         state.hbar = SHAVIAN['hbar']
@@ -401,11 +427,24 @@ class VoynichSession:
         pars_plantae: str | None = None,
         applicatio: str | None = None,
         forma: str | None = None,
+        d_botanical: float | None = None,
     ) -> SessionState:
-        """Execute the full six-gate session. Returns final SessionState."""
+        """
+        Execute the full seven-gate session. Returns final SessionState.
+
+        d_botanical: pre-computed distance from the plant's structural tuple to
+            the botanical section tuple (from navigator.section_distances).
+            When provided, the ADDR gate runs after INIT.  When omitted, the
+            ADDR gate is skipped (legacy / manual-folio mode).
+        """
         state = SessionState()
 
         self._gate_init(state)
+
+        if d_botanical is not None:
+            if not self._gate_addr(state, d_botanical):
+                state.emit('SESSION CLOSED at ADDR — botanical identity unconfirmed')
+                return state
 
         if not self._gate1(state, folio=folio, para=para,
                            potency=potency, pars_plantae=pars_plantae,
@@ -431,6 +470,9 @@ class VoynichSession:
         print('═' * width)
         print(f'  Ħ = {state.hbar}   Φ = {state.phi}   '
               f'Ω = {SHAVIAN.get("omega_" + state.omega, "—") if state.omega else "—"}')
+        if state.addr_d_botanical >= 0:
+            status = 'PASS' if state.addr_passed else 'FAIL'
+            print(f'  Botanical  d={state.addr_d_botanical:.4f}  [{status}]')
         if state.gate1:
             g = state.gate1
             print(f'  Address  {g.folio}/p{g.para}  '
