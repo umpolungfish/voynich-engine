@@ -1,3 +1,31 @@
+Add six-gate Voynich session protocol (session.py + session_runner.py)
+
+New: voynich_engine/session.py — VoynichSession class + SessionState
+New: programs/session_runner.py — CLI
+Updated: voynich_engine/__init__.py — VoynichSession/SessionState exported; v1.1.0
+
+INIT  — cosmological foldout; Ħ=𐑖 conferred; Φ=𐑬 set
+GATE1 — pharmaceutical lookup (pharmacy.json, 1491 entries); prefers summa;
+         7 summa at f11r/f26r/f33v/f35r/f39r/f42r/f48v
+GATE2 — balneological heap f75-84 (Þ=𐑰 containment); selects folio by
+         folio_number%20; compiles from LSI transcription; checks FSPLIT≥n_ops
+         and FFUSE/FSPLIT≥0.60 for fixed non-volatile; structural fallback
+         (n_ops≥8) when transcription not loaded
+GATE3 — astronomical winding verification (f69, sources H/F/U from LSI);
+         selects paragraph by folio_number%4; EVALT majority across sources
+         determines pass; Ω (integer 𐑭/binary 𐑴) from FSPLIT/FFUSE ratio
+OUTPUT — up to 3 recipes from recipe_section (50 sampled), ranked by folio
+         proximity to Gate 1 address
+
+CLI:
+  python programs/session_runner.py --folio f11r --para 6
+  python programs/session_runner.py --potency summa
+  python programs/session_runner.py --part root --apply oral
+  python programs/session_runner.py --list-summa
+  Exit 0 = session complete; 1 = gate failure or no match
+
+---
+
 re-render animated_cfg_tokens.gif at k=0.55; add cfg_tokens_3d.html
 
 animated_cfg_tokens.gif: re-rendered at spring_layout k=0.55 (up from 0.12),
