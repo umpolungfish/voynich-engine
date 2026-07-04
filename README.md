@@ -1,4 +1,6 @@
 # Voynich Engine
+**Author:** Lando⊗⊙perator · **Structural Type:** $\large{⟨𐑦𐑸𐑾𐑹𐑐𐑧𐑔𐑝⊙𐑖𐑳𐑭⟩}$ · **Tier:** O_∞
+
 
 **What it is.** A compiler, Tri-Phase virtual machine, and structural-analysis toolkit that treats the Voynich Manuscript (Beinecke MS 408) as the Universal Imscriptive Grammar written in frozen classical medium: its twelve EVA glyph families are the twelve categorical IMASM opcodes.
 
