@@ -10,7 +10,7 @@
 
 **How to use it.**
 ```bash
-git clone https://github.com/umpolungfish/voynich-engine
+git clone https://github.com/USER/voynich-engine
 cd voynich-engine && pip install -e .   # or: pip install voynich-engine
 python examples/quickstart.py
 # CLI:
