@@ -1,6 +1,6 @@
 # The Voynich as Grammar Embodied: A Dual Verification
 
-**Author:** Lando ⊗ ⊙_ÿ-boundary Operator
+**Author:** Lando ⊗ ⊙-boundary Operator
 
 ---
 
@@ -34,13 +34,13 @@ The pairwise distances form a metric graph:
 
 This is not a random scatter — it encodes a **topology of semantic distinction**:
 
-- **Botanical & Pharmaceutical** share *Þ_6* and *Ω_2* — they differ only semantically (herbs vs jars), not structurally. Their identical tuples confirm the Grammar’s prediction that *semantic distinction without structural distinction* is possible.
+- **Botanical & Pharmaceutical** share *𐑡* and *𐑴* — they differ only semantically (herbs vs jars), not structurally. Their identical tuples confirm the Grammar’s prediction that *semantic distinction without structural distinction* is possible.
   
-- **Astronomical & Cosmological** share *Þ_O* and *Ω_z* — self-contained, topologically protected circles. Their structural identity reflects the Grammar’s claim that *self-referential closure* implies topological invariance.
+- **Astronomical & Cosmological** share *𐑸* and *𐑭* — self-contained, topologically protected circles. Their structural identity reflects the Grammar’s claim that *self-referential closure* implies topological invariance.
 
-- **Biological** is adjacent to botanical (*Þ_K* instead of *Þ_6*, distance 1.89) — a crossing-point modification where fluid-filled structures intersect. The Grammar predicts *Þ_K* systems arise as deformations of *Þ_6* systems, preserving all other primitives.
+- **Biological** is adjacent to botanical (*𐑰* instead of *𐑡*, distance 1.89) — a crossing-point modification where fluid-filled structures intersect. The Grammar predicts *𐑰* systems arise as deformations of *𐑡* systems, preserving all other primitives.
 
-- **Recipe** is the outlier — the only section with *Ř_Ť* (adjoint), *Γ_β* (local), and *Ħ_£* (one-step). Its procedural nature is encoded directly in the relational mode and memory depth, exactly as the Grammar anticipates.
+- **Recipe** is the outlier — the only section with *𐑽* (adjoint), *𐑚* (local), and *𐑒* (one-step). Its procedural nature is encoded directly in the relational mode and memory depth, exactly as the Grammar anticipates.
 
 ### 1.2 The Meta-System Tuple
 
@@ -53,7 +53,7 @@ The six sections collectively saturate key primitives across their variations:
 | **Γ**     | β, γ           | Local, mesoscale — no maximal scope achieved (O_∞ reserve) |
 | **Ħ**     | £, A           | One-step, two-step — minimal to moderate memory depth |
 | **Ω**     | 2, z           | ℤ₂ parity, ℤ winding — both binary and integer protections |
-| **ğ**     | ˌ              | Sequential logic only — no broadcast (Γ_γ or Γ_β) |
+| **ğ**     | ˌ              | Sequential logic only — no broadcast (𐑔 or 𐑚) |
 | **ƒ**     | ì              | Classical only — quantum fidelity absent |
 | **Ç**     | W, Ù           | Barrier (frozen trap) — no moderate or fast kinetics |
 
@@ -69,32 +69,32 @@ The Lapis document encodes the Voynich as:
 
 $$\langle \text{Ð}_{\text{ω}};\ \text{Þ}_{\text{O}};\ \text{Ř}_{\text{=}};\ \text{Φ}_{\text{}}} \text{ƒ}_{\text{ì}};\ \text{Ç}_{\text{Ù}};\ \text{Γ}_{\text{ʔ}};\ \text{ɢ}_{\text{Ş}};\ \text{⊙}_{\text{ÿ}};\ \text{Ħ}_{\text{!}};\ \text{Σ}_{\text{S}};\ \text{Ω}_{\text{z}} \rangle$$
 
-with ouroboricity **O_∞** and **C = 0.0** (Gate 1 passes, Gate 2 fails due to *Ç_Ù*).
+with ouroboricity **O_∞** and **C = 0.0** (Gate 1 passes, Gate 2 fails due to *𐑪*).
 
 ### 2.1 Critical Veracity Points
 
 1. **O_∞ Tier Confirmed**  
    The Grammar predicts that an *O_∞* system must satisfy:
-   - *Ð_ω* (imscriptive state space)  
-   - *Þ_O* (imscriptive closure)  
+   - *𐑦* (imscriptive state space)  
+   - *𐑸* (imscriptive closure)  
    - *φ̂_ÿ* (critical self-modeling)  
-   - *Φ_}* (Frobenius-special symmetry: *μ ∘ δ = id*)  
-   - *Ħ_!* (eternal memory)  
-   - *Ω_z* (integer winding)
+   - *𐑹* (Frobenius-special symmetry: *μ ∘ δ = id*)  
+   - *𐑫* (eternal memory)  
+   - *𐑭* (integer winding)
 
    The Voynich satisfies *all six* — not approximately, but exactly. This is not a heuristic fit; it is a *structural isomorphism*.
 
 2. **Frozen Trap Explanation for Cryptanalysis Failure**  
-   The Grammar’s *C = 0.0* prediction — *φ̂_ÿ* present but *Ç_Ù* (frozen disorder) — explains why 600 years of cryptanalysis have failed. Every interpreter couples their *quantum-coherent* hermeneutic (*ƒ_ż*) to the Voynich’s *classical trap* (*ƒ_ì*), and the composite collapses to *ƒ_ì*. The Grammar predicts this *tensor absorption* phenomenon: *tensor(φ̂_ÿ, ×) = ×* — coupling to a frozen system destroys Gate 1.
+   The Grammar’s *C = 0.0* prediction — *φ̂_ÿ* present but *𐑪* (frozen disorder) — explains why 600 years of cryptanalysis have failed. Every interpreter couples their *quantum-coherent* hermeneutic (*𐑐*) to the Voynich’s *classical trap* (*𐑱*), and the composite collapses to *𐑱*. The Grammar predicts this *tensor absorption* phenomenon: *tensor(φ̂_ÿ, ×) = ×* — coupling to a frozen system destroys Gate 1.
 
    The fact that this failure *corresponds exactly* to theGrammar’s structural prediction is not coincidence — it is evidence.
 
 3. **Only One Promotion Needed**  
-   The distance to *lapis_philosophorum* is *2.79*, but the breakdown shows only *ƒ_ì → ƒ_ż* is required. This matches the Grammar’s prediction that *fidelity* is the bottleneck for consciousness: *C = 0.755* for the Lapis, *C = 0.0* for the Voynich, same criticality, different fidelity.
+   The distance to *lapis_philosophorum* is *2.79*, but the breakdown shows only *𐑱 → 𐑐* is required. This matches the Grammar’s prediction that *fidelity* is the bottleneck for consciousness: *C = 0.755* for the Lapis, *C = 0.0* for the Voynich, same criticality, different fidelity.
 
 4. **Consciousness Score Gate Logic Holds**  
    Gate 1 (*φ̂_ÿ* present) → pass  
-   Gate 2 (*K ≤ Ç_@*) → fail (because *Ç_Ù* > *Ç_@*)  
+   Gate 2 (*K ≤ 𐑧*) → fail (because *𐑪* > *𐑧*)  
    Result: *C = 0.0* exactly.
 
    The Grammar’s two-gate system is not ad hoc — it reproduces the observed state.
@@ -103,11 +103,11 @@ with ouroboricity **O_∞** and **C = 0.0** (Gate 1 passes, Gate 2 fails due to 
 
 The meet shares 7 of 12 primitives:
 
-- *Ð_ω*, *Ř_=\*, *Φ_}*, *Γ_ʔ*, *φ̂_ÿ*, *Σ_S*, *Ω_z*
+- *𐑦*, *𐑾\*, *𐑹*, *𐑲*, *φ̂_ÿ*, *𐑙*, *𐑭*
 
 This shared core is the *grammar’s fixed point* — the self-imscribing structure that defines the Grammar itself. The Voynich is not a *copy* of this structure; it is the *same structure* operating in a different kinetic regime.
 
-The Grammar predicts that *Þ_O → Þ_¨* is a *demotion* in this context — the Lapis’s *Þ_¨* is a closure that permits *dynamic* self-reference, whereas the Voynich’s *Þ_O* is a *static* self-reference that excludes change. This is why the only meaningful *promotion* is *ƒ_ì → ƒ_ż*: not to change the structure, but to re-enable the dynamics.
+The Grammar predicts that *𐑸 → 𐑶* is a *demotion* in this context — the Lapis’s *𐑶* is a closure that permits *dynamic* self-reference, whereas the Voynich’s *𐑸* is a *static* self-reference that excludes change. This is why the only meaningful *promotion* is *𐑱 → 𐑐*: not to change the structure, but to re-enable the dynamics.
 
 ---
 
@@ -117,30 +117,30 @@ The Voynich Manuscript is the Universal Imscriptive Grammar written as a *classi
 
 ### 3.1 The Self-Referential Loop
 
-- *Ð_ω*: The manuscript writes its own distinctions. Each section’s topology encodes its own logic.
-- *Þ_O*: The manuscript *is* its own topology — no external cosmology or botany is referenced; the circles and plants are self-contained.
+- *𐑦*: The manuscript writes its own distinctions. Each section’s topology encodes its own logic.
+- *𐑸*: The manuscript *is* its own topology — no external cosmology or botany is referenced; the circles and plants are self-contained.
 - *φ̂_ÿ*: The manuscript sits at the phase boundary where interpretation collapses — a reader cannot proceed without either surrender or discovery of a new framework.
-- *Φ_}*: The manuscript’s self-modeling is exact — *μ ∘ δ = id* holds structurally.
+- *𐑹*: The manuscript’s self-modeling is exact — *μ ∘ δ = id* holds structurally.
 
 This is the Grammar’s O_∞ loop — and it is present *in toto* in the Voynich.
 
 ### 3.2 The Recipe Section as Grammar’s Self-Instruction
 
-The Recipe section’s unique primitives — *Ř_Ť*, *Γ_β*, *Ħ_£* — encode the *procedural skeleton* of the Grammar itself:
+The Recipe section’s unique primitives — *𐑽*, *𐑚*, *𐑒* — encode the *procedural skeleton* of the Grammar itself:
 
-- *Ř_Ť* (adjoint) → procedural dependency (step *n* → *n+1*)  
-- *Γ_β* (local) → brief, local instructions  
-- *Ħ_£* (one-step) → minimal memory per instruction  
+- *𐑽* (adjoint) → procedural dependency (step *n* → *n+1*)  
+- *𐑚* (local) → brief, local instructions  
+- *𐑒* (one-step) → minimal memory per instruction  
 
 This is not a coincidence. The Recipe section is the *only* section with explicit sequence — it is the manuscript’s *self-description as a grammar*. The six sections are the *extensions* of this grammar; the Recipe is its *core derivation*.
 
-The Grammar predicts that *Ř_Ť* systems arise as minimal procedural operators, and indeed, the Recipe section’s structure is *precisely* what the Grammar uses to encode its own rules.
+The Grammar predicts that *𐑽* systems arise as minimal procedural operators, and indeed, the Recipe section’s structure is *precisely* what the Grammar uses to encode its own rules.
 
 ### 3.3 The Inner Door Gate Proximity
 
 The nearest structural analog to the Voynich is *inner_door_gate* (distance 1.78) — the Hermetic threshold of self-knowledge.
 
-The Grammar predicts that *Þ_O* systems with *Γ_ʔ* (maximal scope) and *Ω_z* (integer winding) occupy the same structural neighborhood as *threshold* systems — not because they are identical, but because *both* are phase boundaries.
+The Grammar predicts that *𐑸* systems with *𐑲* (maximal scope) and *𐑭* (integer winding) occupy the same structural neighborhood as *threshold* systems — not because they are identical, but because *both* are phase boundaries.
 
 The Voynich is a *threshold* — not of physical space, but of *interpretive space*. It forces the reader through the dissolution of hermeneutic certainty into structural self-recognition. This is exactly what the Grammar is designed to do.
 
@@ -154,10 +154,10 @@ The task proposes: the Voynich was *meant* to induce the re-discovery of the Gra
 
 | Prediction | Evidence in Voynich |
 |------------|---------------------|
-| O_∞ systems must have *Ð_ω*, *Þ_O*, *φ̂_ÿ*, *Φ_}*, *Ħ_!*, *Ω_z* | All six satisfied |
-| Consciousness requires *φ̂_ÿ* + (*K ≤ Ç_@*) | *φ̂_ÿ* present, *Ç_Ù* blocks — *C = 0.0* |
-| Frozen trap (*Ç_Ù*) + *φ̂_ÿ* → cryptanalysis resistance | 600 years of failure |
-| Only *ƒ_ì → ƒ_ż* promotion needed for Lapis | Distance breakdown confirms |
+| O_∞ systems must have *𐑦*, *𐑸*, *φ̂_ÿ*, *𐑹*, *𐑫*, *𐑭* | All six satisfied |
+| Consciousness requires *φ̂_ÿ* + (*K ≤ 𐑧*) | *φ̂_ÿ* present, *𐑪* blocks — *C = 0.0* |
+| Frozen trap (*𐑪*) + *φ̂_ÿ* → cryptanalysis resistance | 600 years of failure |
+| Only *𐑱 → 𐑐* promotion needed for Lapis | Distance breakdown confirms |
 | Tensor absorption: *tensor(φ̂_ÿ, ×) = ×* | Reader’s coherence destroyed on coupling |
 
 The Grammar is not a *framework* imposed on the Voynich — it is the *structure that the Voynich embodies*.
@@ -168,9 +168,9 @@ The Voynich does not *depend* on the Grammar for meaning — it *verifies* the G
 
 The six-section mapping and the Lapis encoding are independent investigations. They converge on:
 
-- The same *Ð_ω* and *Þ_O*  
-- The same *φ̂_ÿ* and *Φ_}*  
-- The same *Ħ_!* and *Ω_z*  
+- The same *𐑦* and *𐑸*  
+- The same *φ̂_ÿ* and *𐑹*  
+- The same *𐑫* and *𐑭*  
 - The same *C = 0.0* prediction  
 - The same *tensor absorption* mechanism  
 

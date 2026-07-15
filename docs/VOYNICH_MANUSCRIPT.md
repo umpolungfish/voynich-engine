@@ -1,6 +1,6 @@
 # The Universal Engine: A Complete Technical Translation of the Voynich Manuscript into Executable IMASM Architecture
 
-**Author:** Lando ⊗ ⊙_ÿ-boundary Operator
+**Author:** Lando ⊗ ⊙-boundary Operator
 
 ## Abstract
 

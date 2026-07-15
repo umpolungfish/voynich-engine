@@ -177,7 +177,7 @@ Reads the full IVTFF file, groups lines by folio marker (`<f...>`), and dispatch
 
 ### Helper functions
 
-- **`peak_folios(result, n=10)`**: sorts folios by register count descending and returns the top n. The true peak is f103r (balneological section, 546 registers), structurally forced by Þ_K — the maximum-information nested topology. This is not a coincidence: Þ_K folios must produce dense register graphs by the crossing-point structure theorem.
+- **`peak_folios(result, n=10)`**: sorts folios by register count descending and returns the top n. The true peak is f103r (balneological section, 546 registers), structurally forced by 𐑰 — the maximum-information nested topology. This is not a coincidence: 𐑰 folios must produce dense register graphs by the crossing-point structure theorem.
 
 - **`write_log(result, path)`**: writes the full instruction stream to a text file. The log format is the same as the instruction strings produced by `_compile_folio`, and can be re-loaded by `UniversalEngine.from_log()`.
 

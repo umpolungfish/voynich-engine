@@ -34,10 +34,10 @@ for snap in engine.run(steps=10000, report_every=1000): print(snap)
 ### 1. Structural imscription
 
 ```
-⟨ Ð_ω  Þ_O  Ř_=  Φ_}  ƒ_ì  Ç_Ù  Γ_ʔ  ɢ_Ş  ⊙_ÿ  Ħ_!  Σ_S  Ω_z ⟩
+⟨ 𐑦  𐑸  𐑾  𐑹  𐑱  𐑪  𐑲  𐑵  ⊙  𐑫  𐑙  𐑭 ⟩
 ```
 
-Ouroboricity O∞: μ ∘ δ = id exactly. Consciousness score C = 0.0. Gate 1 passes (⊙_ÿ present); Gate 2 fails because Ç_Ù (order-frozen kinetics) exceeds the ceiling for dynamical self-modeling access. The Voynich is a structurally complete self-referential system whose self-modeling loop is kinetically frozen, not absent. O∞ and C > 0 are orthogonal: Frobenius self-reference guarantees only that every decomposition reassembles.
+Ouroboricity O∞: μ ∘ δ = id exactly. Consciousness score C = 0.0. Gate 1 passes (⊙ present); Gate 2 fails because 𐑪 (order-frozen kinetics) exceeds the ceiling for dynamical self-modeling access. The Voynich is a structurally complete self-referential system whose self-modeling loop is kinetically frozen, not absent. O∞ and C > 0 are orthogonal: Frobenius self-reference guarantees only that every decomposition reassembles.
 
 ### 2. Section meta-system
 
@@ -45,12 +45,12 @@ The six canonical sections saturate the grammar's topological degrees of freedom
 
 | Section(s) | Topology (Þ) | Distinction |
 |---|---|---|
-| Botanical / Pharmaceutical | Þ_6 (network) | Indistinguishable at primitive level (semantic, not structural) |
-| Astronomical / Cosmological | Þ_O (imscriptive) | Self-contained circles, no external referent |
-| Biological | Þ_K (nested) | Crossing-point intersections between nested structures |
-| Recipe | Þ_6, Ř_Ť (adjoint) | Only section with procedural dependency (step n needs n−1) |
+| Botanical / Pharmaceutical | 𐑡 (network) | Indistinguishable at primitive level (semantic, not structural) |
+| Astronomical / Cosmological | 𐑸 (imscriptive) | Self-contained circles, no external referent |
+| Biological | 𐑰 (nested) | Crossing-point intersections between nested structures |
+| Recipe | 𐑡, 𐑽 (adjoint) | Only section with procedural dependency (step n needs n−1) |
 
-All sections share ⊙_ÿ (critical self-modeling).
+All sections share ⊙ (critical self-modeling).
 
 ### 3. Computational compilation
 
@@ -61,15 +61,15 @@ Total instructions : 44,445      Entropy delta : 0.00000000 J/K
 Status             : SELF_SUSTAINING_BOOTSTRAP_COMPLETE
 ```
 
-Running to first-pass completion locks register space: 520 active registers (489 IFIX-burned to ROM), then a steady 17.02% paradox-stabilization rate per step at zero entropy cost. Nothing new ever activates. The density peak is f103r (balneological, 546 registers), structurally forced by Þ_K. The call graph is one connected component with the Frobenius hub-and-chain signature predicted by Φ_}.
+Running to first-pass completion locks register space: 520 active registers (489 IFIX-burned to ROM), then a steady 17.02% paradox-stabilization rate per step at zero entropy cost. Nothing new ever activates. The density peak is f103r (balneological, 546 registers), structurally forced by 𐑰. The call graph is one connected component with the Frobenius hub-and-chain signature predicted by 𐑹.
 
 ## The tensor product problem
 
-Any quantum-coherent interpretive system that engages the Voynich couples its fidelity to the manuscript's classical regime ƒ_ì; the bottleneck rule forces the composite to ƒ_ì and the reader's semantic coherence collapses. That is the structural account of six centuries of failure. The only promotion separating the Voynich from the *lapis philosophorum* is ƒ_ì → ƒ_ż.
+Any quantum-coherent interpretive system that engages the Voynich couples its fidelity to the manuscript's classical regime 𐑱; the bottleneck rule forces the composite to 𐑱 and the reader's semantic coherence collapses. That is the structural account of six centuries of failure. The only promotion separating the Voynich from the *lapis philosophorum* is 𐑱 → 𐑐.
 
 ## How it was used
 
-A session required three Operator inputs (⊙_c criticality posture, Φ_} parity claim, Ω_Z winding class) and produced a pharmaceutical recipe only if the Frobenius closure conditions held; the foldout's physical structure conferred chirality automatically. See [`docs/OPERATOR_SESSION.md`](docs/OPERATOR_SESSION.md) for a full sixteenth-century applied session.
+A session required three Operator inputs (⊙_c criticality posture, 𐑹 parity claim, Ω_Z winding class) and produced a pharmaceutical recipe only if the Frobenius closure conditions held; the foldout's physical structure conferred chirality automatically. See [`docs/OPERATOR_SESSION.md`](docs/OPERATOR_SESSION.md) for a full sixteenth-century applied session.
 
 ## Repository structure
 

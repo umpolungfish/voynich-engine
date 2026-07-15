@@ -11,10 +11,10 @@ Computes per-folio structural fingerprints and compares them:
   6. Cross-folio structural distance matrix (Jensen-Shannon divergence)
 
 The hypothesis from the structural analysis:
-  - Botanical/Pharmaceutical: network topology (Þ_6) → uniform opcode spread
-  - Cosmological: imscriptive (Þ_O) → high FSPLIT/FFUSE balance, closed loops
-  - Biological: nested (Þ_K) → deep register reuse, high ENGAGR
-  - Recipe: adjoint (Ř_Ť) → sequential AFWD/AREV pairs, high CLINK
+  - Botanical/Pharmaceutical: network topology (𐑡) → uniform opcode spread
+  - Cosmological: imscriptive (𐑸) → high FSPLIT/FFUSE balance, closed loops
+  - Biological: nested (𐑰) → deep register reuse, high ENGAGR
+  - Recipe: adjoint (𐑽) → sequential AFWD/AREV pairs, high CLINK
 
 Usage:
     python programs/folio_comparator.py data/LSI_ivtff_0d.txt [--top-n 20]
