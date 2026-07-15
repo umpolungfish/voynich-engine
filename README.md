@@ -69,7 +69,7 @@ Any quantum-coherent interpretive system that engages the Voynich couples its fi
 
 ## How it was used
 
-A session required three Operator inputs (⊙_c criticality posture, 𐑹 parity claim, Ω_Z winding class) and produced a pharmaceutical recipe only if the Frobenius closure conditions held; the foldout's physical structure conferred chirality automatically. See [`docs/OPERATOR_SESSION.md`](docs/OPERATOR_SESSION.md) for a full sixteenth-century applied session.
+A session required three Operator inputs (⊙ criticality posture, 𐑹 parity claim, Ω_Z winding class) and produced a pharmaceutical recipe only if the Frobenius closure conditions held; the foldout's physical structure conferred chirality automatically. See [`docs/OPERATOR_SESSION.md`](docs/OPERATOR_SESSION.md) for a full sixteenth-century applied session.
 
 ## Repository structure
 

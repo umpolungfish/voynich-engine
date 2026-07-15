@@ -61,7 +61,7 @@ Notation: 63 replacements of Voynich-style subscript notation → Shavian glyphs
   Φ_F (Frobenius-special) → 𐑹 (×3)
   Φ_± (bilateral)         → 𐑬 (×1)
   ⊙_sub (sub-critical)    → 𐑢 (×2)
-  ⊙_c (criticality)       → ⊙ (×3)
+  ⊙ (criticality)       → ⊙ (×3)
   Σ_{1:1}                 → 𐑙 (×1)
   Ω_z (ℤ-winding)         → 𐑭 (×8)
   Ω_2 (ℤ₂-winding)        → 𐑴 (×1)
